@@ -1,111 +1,2201 @@
-<!DOCTYPE html>
-<head>
-  <title>429 Too Many Requests</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style type="text/css">
-  body {
-    background: white;
-  }
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"  class="touch-styles">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- This is Squarespace. --><!-- jing-luo-fnsd -->
+<base href="">
+<meta charset="utf-8" />
+<title>Ideas: February 2024 Release &mdash; QuickShift.io</title>
+<meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" /><link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/1595179723985-MS75GLEJCXQUOJSIQOMN/favicon.ico?format=100w"/>
+<link rel="canonical" href="https://quickshift.io/ideas-february-2024-release"/>
+<meta property="og:site_name" content="QuickShift.io"/>
+<meta property="og:title" content="Ideas: February 2024 Release &mdash; QuickShift.io"/>
+<meta property="og:url" content="https://quickshift.io/ideas-february-2024-release"/>
+<meta property="og:type" content="website"/>
+<meta itemprop="name" content="Ideas: February 2024 Release — QuickShift.io"/>
+<meta itemprop="url" content="https://quickshift.io/ideas-february-2024-release"/>
+<meta name="twitter:title" content="Ideas: February 2024 Release — QuickShift.io"/>
+<meta name="twitter:url" content="https://quickshift.io/ideas-february-2024-release"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="description" content="" />
+<link rel="preconnect" href="https://images.squarespace-cdn.com">
+<script type="text/javascript" src="//use.typekit.net/ik/waeueuChrjs9xNV7u41v6X8BlbKo-5MTKb9wWvZ57r9fel9gfFHN4UJLFRbh52jhWD9tZQicFeboF2ZRwhwXFRbuFQ6ajAbaZgGMJ6U3ScNt-AuyOAozicIKIcBqdh48OAiyScBldhoqOWgkdkG4f5J7IMMjMkMfH6qJn3IbMg6IJMJ7f6K3UMIbMg6BJMJ7fbKlMsMMeMj6MKG4fJCgIMMjgkMfH6qJ7bIbMg6JJMJ7fbK3MsMMeMt6MKG4fHtgIMMjIfMfH6qJRMIbMg6sJMJ7fbRDFgMgeMb6MKG4fVbXIMIjgKMfH6qJvRbbMs65JMHbMd7Iu_9e.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript" crossorigin="anonymous" defer="defer" nomodule="nomodule" src="//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js"></script>
+<script type="text/javascript" crossorigin="anonymous" defer="defer" src="//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js"></script>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-dddbca279c72c8b4a0f8-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_runtime');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-dddbca279c72c8b4a0f8-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6c569122bfa66a51a056-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_moment_js_vendor');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6c569122bfa66a51a056-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-907dfe7701e90c1e5cbd-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-cldr_resource_pack');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-907dfe7701e90c1e5cbd-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-61293f01d648eef165fc-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors_stable');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-61293f01d648eef165fc-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-7e83b47571ba105379d4-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-7e83b47571ba105379d4-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-1cf2c70adfed8a101e0b-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-1cf2c70adfed8a101e0b-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/performance-a1f04ef378c5b48fe84b-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-performance');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/performance-a1f04ef378c5b48fe84b-min.en-US.js" defer ></script><script data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {"betaFeatureFlags":["campaigns_discount_section_in_blasts","campaigns_new_image_layout_picker","scripts_defer","order_status_page_checkout_landing_enabled","accounting_orders_sync","contacts_and_campaigns_redesign","commerce_site_visitor_metrics","campaigns_import_discounts","marketing_landing_page","visitor_react_forms","i18n_beta_website_locales","campaigns_thumbnail_layout","campaigns_discount_section_in_automations","gdpr_cookie_banner","enable_css_variable_tweaks","is_feature_gate_refresh_enabled","campaigns_global_uc_ab","commerce_clearpay"],"facebookAppId":"314192535267336","facebookApiVersion":"v6.0","rollups":{"squarespace-announcement-bar":{"js":"//assets.squarespace.com/universal/scripts-compressed/announcement-bar-d4b60a491ecde5b97764-min.en-US.js"},"squarespace-audio-player":{"css":"//assets.squarespace.com/universal/styles-compressed/audio-player-ef238f99d44a3bdc6fbe-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/audio-player-59306f113f35d3f50e3c-min.en-US.js"},"squarespace-blog-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/blog-collection-list-8ec841cacfb75d4282f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-93d51fbe4a919163e8fd-min.en-US.js"},"squarespace-calendar-block-renderer":{"css":"//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-10dac239e5ffd3b32e9c-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-eb98a9772eef10a61680-min.en-US.js"},"squarespace-chartjs-helpers":{"css":"//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-9e75b5d75bb5cb4c1f67-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-0555106212c61832dc1b-min.en-US.js"},"squarespace-comments":{"css":"//assets.squarespace.com/universal/styles-compressed/comments-a0d9356d7c1596ab2c53-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/comments-e836f4dfa856d84f2b35-min.en-US.js"},"squarespace-custom-css-popup":{"css":"//assets.squarespace.com/universal/styles-compressed/custom-css-popup-3a08a59ab0d49f924e34-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/custom-css-popup-d46410282f57be3f82d7-min.en-US.js"},"squarespace-dialog":{"css":"//assets.squarespace.com/universal/styles-compressed/dialog-2dcac307baebe70727dc-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/dialog-da9aa7d67069c81c8e17-min.en-US.js"},"squarespace-events-collection":{"css":"//assets.squarespace.com/universal/styles-compressed/events-collection-10dac239e5ffd3b32e9c-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/events-collection-46066e12a6beadb43ff2-min.en-US.js"},"squarespace-form-rendering-utils":{"js":"//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-d65143596c1fd2db6a8c-min.en-US.js"},"squarespace-forms":{"css":"//assets.squarespace.com/universal/styles-compressed/forms-b952cddb94c5d471b8d3-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/forms-e6a04df1ede4c6abe0ce-min.en-US.js"},"squarespace-gallery-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-8ec841cacfb75d4282f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-8ab6d60c33aaa9220d48-min.en-US.js"},"squarespace-image-zoom":{"css":"//assets.squarespace.com/universal/styles-compressed/image-zoom-8ec841cacfb75d4282f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/image-zoom-fde0b4da7f2332d3851c-min.en-US.js"},"squarespace-pinterest":{"css":"//assets.squarespace.com/universal/styles-compressed/pinterest-8ec841cacfb75d4282f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/pinterest-42b2471f35a458529d41-min.en-US.js"},"squarespace-popup-overlay":{"css":"//assets.squarespace.com/universal/styles-compressed/popup-overlay-e89b4cc96c222ed66c64-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/popup-overlay-b373e9f9fb94ec2f2f96-min.en-US.js"},"squarespace-product-quick-view":{"css":"//assets.squarespace.com/universal/styles-compressed/product-quick-view-2f87c3dcb76ca485179d-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/product-quick-view-2e3fc5d747483a2b3196-min.en-US.js"},"squarespace-products-collection-item-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-8ec841cacfb75d4282f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-921b8aa24f5746dfa032-min.en-US.js"},"squarespace-products-collection-list-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-8ec841cacfb75d4282f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-52403235629e0d8a003b-min.en-US.js"},"squarespace-search-page":{"css":"//assets.squarespace.com/universal/styles-compressed/search-page-917382e71b023cec7555-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/search-page-336715e1da1dc4d74c9a-min.en-US.js"},"squarespace-search-preview":{"js":"//assets.squarespace.com/universal/scripts-compressed/search-preview-13a7d5fe3349c6c1aa31-min.en-US.js"},"squarespace-simple-liking":{"css":"//assets.squarespace.com/universal/styles-compressed/simple-liking-4279cc7bb78333b8db43-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/simple-liking-cede7154e30542cabab1-min.en-US.js"},"squarespace-social-buttons":{"css":"//assets.squarespace.com/universal/styles-compressed/social-buttons-3a7d186e7e5e3b30911b-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/social-buttons-626c1bfe3e61606c3766-min.en-US.js"},"squarespace-tourdates":{"css":"//assets.squarespace.com/universal/styles-compressed/tourdates-8ec841cacfb75d4282f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/tourdates-3388e569034b8c9cef97-min.en-US.js"},"squarespace-website-overlays-manager":{"css":"//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-efd3c12d460f58781eb3-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-773808c9b3d89fc7a462-min.en-US.js"}},"pageType":2,"website":{"id":"58e7f4d946c3c4645587ad7d","identifier":"jing-luo-fnsd","websiteType":1,"contentModifiedOn":1735516066206,"cloneable":false,"hasBeenCloneable":false,"siteStatus":{},"language":"en-US","timeZone":"US/Pacific","machineTimeZoneOffset":-28800000,"timeZoneOffset":-28800000,"timeZoneAbbr":"PST","siteTitle":"QuickShift.io","fullSiteTitle":"Ideas: February 2024 Release \u2014 QuickShift.io","siteTagLine":"by Jing Luo","siteDescription":"<p>Keeping track of what Jing's been up to.</p>","shareButtonOptions":{"7":true,"1":true,"6":true,"2":true,"8":true,"4":true,"3":true},"authenticUrl":"https://quickshift.io","internalUrl":"https://jing-luo-fnsd.squarespace.com","baseUrl":"https://quickshift.io","primaryDomain":"quickshift.io","sslSetting":3,"isHstsEnabled":false,"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false,"screenshotId":"1102dec41c85567f60ec2c66c842ba7cfcce9005ef7859d2b014386e06f7fadb","captchaSettings":{"enabledForDonations":false},"showOwnerLogin":false},"websiteSettings":{"id":"58e7f4d946c3c4645587ad80","websiteId":"58e7f4d946c3c4645587ad7d","type":"Personal","subjects":[],"country":"US","state":"CA","simpleLikingEnabled":true,"mobileInfoBarSettings":{"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":false,"commentDisableAfterDaysDefault":0,"disqusShortname":"","commentsEnabled":true,"contactPhoneNumber":"","storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"expressCheckout":false,"continueShoppingLinkUrl":"/","useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"currenciesSupported":["CHF","HKD","MXN","EUR","DKK","USD","CAD","MYR","NOK","THB","AUD","SGD","ILS","PLN","GBP","CZK","SEK","NZD","PHP","RUB"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":1,"orderConfirmationInjectCode":"","showCustomCheckoutForm":false,"checkoutPageMarketingOptInEnabled":false,"enableMailingListOptInByDefault":false,"sameAsRetailLocation":false,"merchandisingSettings":{"scarcityEnabledOnProductItems":false,"scarcityEnabledOnProductBlocks":false,"scarcityMessageType":"DEFAULT_SCARCITY_MESSAGE","scarcityThreshold":10,"multipleQuantityAllowedForServices":true,"restockNotificationsEnabled":false,"restockNotificationsSuccessText":"","restockNotificationsMailingListSignUpEnabled":false,"relatedProductsEnabled":false,"relatedProductsOrdering":"random","soldOutVariantsDropdownDisabled":false,"productComposerOptedIn":false,"productComposerABTestOptedOut":false,"productReviewsEnabled":false,"displayImportedProductReviewsEnabled":false,"hasOptedToCollectNativeReviews":false},"minimumOrderSubtotalEnabled":false,"isLive":false,"multipleQuantityAllowedForServices":true},"useEscapeKeyToLogin":true,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled"},"ampEnabled":false,"userAccountsSettings":{"loginAllowed":false,"signupAllowed":false}},"cookieSettings":{"isCookieBannerEnabled":false,"isRestrictiveCookiePolicyEnabled":false,"cookieBannerText":"","cookieBannerTheme":"","cookieBannerVariant":"","cookieBannerPosition":"","cookieBannerCtaVariant":"","cookieBannerCtaText":"","cookieBannerAcceptType":"OPT_IN","cookieBannerOptOutCtaText":"","cookieBannerHasOptOut":false,"cookieBannerHasManageCookies":true,"cookieBannerManageCookiesLabel":"","cookieBannerSavedPreferencesText":"","cookieBannerSavedPreferencesLayout":"PILL"},"websiteCloneable":false,"collection":{"title":"Ideas: February 2024 Release","id":"65caa1484d22ba29d24ba254","fullUrl":"/ideas-february-2024-release","type":10,"permissionType":1},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"aspect-ratio":"Auto","banner-slideshow-controls":"Arrows","gallery-arrow-style":"No Background","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-design":"Grid","gallery-info-overlay":"Show on Hover","gallery-loop":"false","gallery-navigation":"Bullets","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"rgba(34,34,34,1)","galleryArrowColor":"rgba(255,255,255,1)","galleryAutoplaySpeed":"3","galleryCircleColor":"rgba(255,255,255,1)","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"100px","gridSize":"280px","gridSpacing":"10px","logoContainerWidth":"140px","product-gallery-auto-crop":"false","product-image-auto-crop":"true","siteTitleContainerWidth":"220px","tweak-v1-related-products-title-spacing":"50px"},"templateId":"52a74dafe4b073a80cd253c5","templateVersion":"7","pageFeatures":[1,2,4],"gmRenderKey":"QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4","templateScriptsRootUrl":"https://static1.squarespace.com/static/ta/52a74d9ae4b0253945d2aee9/1052/scripts/","impersonatedSession":false,"tzData":{"zones":[[-480,"US","P%sT",null]],"rules":{"US":[[1967,2006,null,"Oct","lastSun","2:00","0","S"],[1987,2006,null,"Apr","Sun>=1","2:00","1:00","D"],[2007,"max",null,"Mar","Sun>=8","2:00","1:00","D"],[2007,"max",null,"Nov","Sun>=1","2:00","0","S"]]}},"showAnnouncementBar":false,"recaptchaEnterpriseContext":{"recaptchaEnterpriseSiteKey":"6LdDFQwjAAAAAPigEvvPgEVbb7QBm-TkVJdDTlAv"},"i18nContext":{"timeZoneData":{"id":"America/Los_Angeles","name":"Pacific Time"}},"env":"PRODUCTION"};</script><script type="module">Squarespace.load(window);</script>
+<script data-sqs-type="imageloader-bootstrapper" type="module">if(window.ImageLoader) window.ImageLoader.bootstrap({}, document);</script>
+<script type="module">Squarespace.afterBodyLoad(Y);</script>
+<script type="application/ld+json">{"url":"https://quickshift.io","name":"QuickShift.io","description":"<p>Keeping track of what Jing's been up to.</p>","@context":"http://schema.org","@type":"WebSite"}</script><link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/sitecss/58e7f4d946c3c4645587ad7d/128/52a74dafe4b073a80cd253c5/58e7f4d946c3c4645587ad86/1052/site.css"/><script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104540220-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZjQwMz', true);gtag('config', 'UA-104540220-1');</script><!-- End of Squarespace Headers -->
+    <script>/* Must be below squarespace-headers */(function(){var e='ontouchstart'in window||navigator.msMaxTouchPoints;var t=document.documentElement;if(!e&&t){t.className=t.className.replace(/touch-styles/,'')}})()
+    </script>
+  </head>
+  <body id="collection-65caa1484d22ba29d24ba254" class="transparent-header enable-nav-button nav-button-style-outline nav-button-corner-style-pill banner-button-style-solid banner-button-corner-style-pill banner-slideshow-controls-arrows meta-priority-date  hide-entry-author hide-list-entry-footer    hide-blog-sidebar center-navigation--info    event-show-past-events event-thumbnails event-thumbnail-size-32-standard event-date-label  event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts      gallery-design-grid aspect-ratio-auto lightbox-style-light gallery-navigation-bullets gallery-info-overlay-show-on-hover gallery-aspect-ratio-32-standard gallery-arrow-style-no-background gallery-transitions-fade gallery-show-arrows gallery-auto-crop   product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square  show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-light hide-opentable-icons opentable-style-dark small-button-style-solid small-button-shape-square medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-solid button-corner-style-square tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-type-page collection-layout-default collection-65caa1484d22ba29d24ba254 mobile-style-available">
+    <div class="body-overlay"></div>
+    <div class="sqs-announcement-bar-dropzone"></div>
+    <div id="sidecarNav">
+      
 
-  main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    min-width: 95vw;
-  }
+  <div id="mobileNavWrapper" class="nav-wrapper" data-content-field="navigation-mobileNav">
+    <nav id="mobileNavigation">
+      
 
-  main h1 {
-    font-weight: 400;
-    font-size: 4.6em;
-    color: #191919;
-    margin: 0 0 11px 0;
-  }
+      
+        
+          
 
-  main p {
-    font-size: 1.4em;
-    color: #3a3a3a;
-    font-weight: 400;
-    line-height: 2em;
-    margin: 0;
-  }
+          
 
-  main p a {
-    color: #3a3a3a;
-    text-decoration: none;
-    border-bottom: solid 1px #3a3a3a;
-  }
+            
+            <div class="collection">
+              <a href="/about-me">
+                About Me
+              </a>
+            </div>
+            
 
-  body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-  }
+          
+        
+        
 
-  #status-page {
-    display: none;
-  }
+      
+        
+          
+          <div class="index homepage">
+            <a href="/">
+              Home
+            </a>
+          </div>
+          
+        
 
-  footer {
-    position: absolute;
-    bottom: 22px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    line-height: 2em;
-  }
+      
+        
+          
 
-  footer span {
-    margin: 0 11px;
-    font-size: 1em;
-    font-weight: 400;
-    color: #a9a9a9;
-    white-space: nowrap;
-  }
+          
 
-  footer span strong {
-    font-weight: 400;
-    color: #191919;
-  }
+            
+            <div class="collection">
+              <a href="/work-summaries">
+                Work Summaries
+              </a>
+            </div>
+            
 
-  @media (max-width: 600px) {
-    body {
-      font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-    }
-  }
+          
+        
+        
 
-  </style>
-</head>
-<body>
+      
+        
+          
 
-  <main>
-    <h1>429 Too Many Requests</h1>
-    <p id="status-page">Please visit <a href="https://status.squarespace.com">status.squarespace.com</a> for updates</p>
-  </main>
+          
+          <div class="folder active">
+            <div class="folder-toggle" data-href="/work">Work In-Depth</div>
+            <div class="subnav">
+            
 
-  <footer>
-    <span><strong>GTwBW63h/9qpPzp4x @ Sun, 22 Dec 2024 00:01:05 GMT</strong></span>
-    <span>SEC-60</span>
-  </footer>
+              
+              <div class="collection">
+                <a href="/ideas-december-2024-release">
+                  Ideas: December 2024 Release
+                </a>
+              </div>
+              
+              
+            
 
-  <script>
-    function showStatusPage(){
-      var statusCode = 429;
-      var statusPageEl = document.getElementById('status-page');
+              
+              <div class="collection">
+                <a href="/research-aging-bioinformatics">
+                  Research: Aging Bioinformatics
+                </a>
+              </div>
+              
+              
+            
 
-      if(!statusPageEl) { return; }
+              
+              <div class="collection">
+                <a href="/ideas-november-2024-release">
+                  Ideas: November 2024 Release
+                </a>
+              </div>
+              
+              
+            
 
-      if (statusCode && statusCode >= 500 && statusCode <= 599) {
-        statusPageEl.style.display = 'block';
-      } else {
-        statusPageEl.style.display = 'none';
-      }
-    };
-    try {
-      showStatusPage();
-    } catch (error) {
-      console.log(error)
-    }
-  </script>
-</body>
+              
+              <div class="collection">
+                <a href="/ideas-september-2024-release">
+                  Ideas: September 2024 Release
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/ideas-june-2024-release">
+                  Ideas: June 2024 Release
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/personal-defining-actions">
+                  Personal: Defining actions
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection active">
+                <a href="/ideas-february-2024-release">
+                  Ideas: February 2024 Release
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-chatai">
+                  Project: ChatAI
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/research-functions-of-gene-duplication">
+                  Research: Functions of Gene Duplication
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-drone-delivery-kaggle">
+                  Project: Drone Delivery Kaggle
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-haptic-sense">
+                  Project: Haptic Sense
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-easycopyio-web-app">
+                  Project: EasyCopy.io Web App
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-pandemic-data-analysis">
+                  Project: Pandemic Data Analysis
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/contract-intrmodl">
+                  Contract: Intrmodl a intermodal shipping company
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/job-prismai">
+                  Job: Prism.AI
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-online-community-web-app">
+                  Project: Online Community Web App
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/contract-robotic-microscope-prototype">
+                  Contract: Robotic Microscope Prototype
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/contract-purdue-alumni-association-chrome-extension">
+                  Contract: Purdue Alumni Association Chrome Extension
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-journal-light-web-app">
+                  Startup: Journal Light Web App
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-planet-kaggle-competition-satellite-image-analysis">
+                  Project: Planet Kaggle Competition - Satellite Image Analysis
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/job-genia-technology-a-nanopore-based-dna-sequencer">
+                  Job: Genia Technology a nanopore-based DNA sequencer
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-catalyst-frame-microscope-part1-ideation-and-prototyping">
+                  Startup: Catalyst Frame Microscope Part1 - Ideation and Prototyping
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-catalyst-frame-microscope-part2-the-business-of-running-a-business">
+                  Startup: Catalyst Frame Microscope Part2 - The Business of Running a Business
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-catalyst-frame-microscope-part3-marketing-and-public-relations">
+                  Startup: Catalyst Frame Microscope Part3 - Marketing and Public Relations
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-catalyst-frame-microscope-part4-manufacturing-there-be-dragons">
+                  Startup: Catalyst Frame Microscope Part4 - Manufacturing... There be Dragons
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-catalyst-frame-microscope-part5-looking-back">
+                  Startup: Catalyst Frame Microscope Part5 - Looking Back
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-diy-handsfree-computer-interface-for-under-200">
+                  Project: DIY Hands-free Computer Interface for Under $200
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-plant-pixels">
+                  Project: Plant Pixels
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/research-bioinformatic-e-coli-simulation">
+                  Research: Bioinformatic E. coli Simulation
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-scholars-protutoring">
+                  Startup: Scholars Protutoring
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/personal-clear-cold-skies">
+                  Personal: Clear Cold Skies
+                </a>
+              </div>
+              
+              
+            
+            </div>
+          </div>
+          
+        
+        
+
+      
+    </nav>
+  </div>
+
+
+
+    </div>
+    <div id="siteWrapper" class="clearfix">
+
+      <div class="sqs-cart-dropzone"></div>
+
+      <header id="header" class="show-on-scroll" data-offset-el=".index-section" data-offset-behavior="bottom" role="banner">
+        <div class="header-inner">
+          <div id="siteTitleWrapper" class="wrapper" data-content-field="site-title">
+            
+              <h1 id="siteTitle" class="site-title"><a href="/">QuickShift.io</a></h1>
+            
+          </div><!--
+          --><div class="mobile-nav-toggle"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></div><div class="mobile-nav-toggle fixed-nav-toggle"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></div><!--
+          --><div id="headerNav">
+
+  <div id="mainNavWrapper" class="nav-wrapper" data-content-field="navigation-mainNav">
+    <nav id="mainNavigation" data-content-field="navigation-mainNav">
+      
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/about-me">
+                About Me
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+        
+          
+          <div class="index homepage">
+            <a href="/">
+              Home
+            </a>
+          </div>
+          
+        
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/work-summaries">
+                Work Summaries
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+        
+          
+
+          
+          <div class="folder active">
+            <div class="folder-toggle" data-href="/work">Work In-Depth</div>
+            <div class="subnav">
+            
+
+              
+              <div class="collection">
+                <a href="/ideas-december-2024-release">
+                  Ideas: December 2024 Release
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/research-aging-bioinformatics">
+                  Research: Aging Bioinformatics
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/ideas-november-2024-release">
+                  Ideas: November 2024 Release
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/ideas-september-2024-release">
+                  Ideas: September 2024 Release
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/ideas-june-2024-release">
+                  Ideas: June 2024 Release
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/personal-defining-actions">
+                  Personal: Defining actions
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection active">
+                <a href="/ideas-february-2024-release">
+                  Ideas: February 2024 Release
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-chatai">
+                  Project: ChatAI
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/research-functions-of-gene-duplication">
+                  Research: Functions of Gene Duplication
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-drone-delivery-kaggle">
+                  Project: Drone Delivery Kaggle
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-haptic-sense">
+                  Project: Haptic Sense
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-easycopyio-web-app">
+                  Project: EasyCopy.io Web App
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-pandemic-data-analysis">
+                  Project: Pandemic Data Analysis
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/contract-intrmodl">
+                  Contract: Intrmodl a intermodal shipping company
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/job-prismai">
+                  Job: Prism.AI
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-online-community-web-app">
+                  Project: Online Community Web App
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/contract-robotic-microscope-prototype">
+                  Contract: Robotic Microscope Prototype
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/contract-purdue-alumni-association-chrome-extension">
+                  Contract: Purdue Alumni Association Chrome Extension
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-journal-light-web-app">
+                  Startup: Journal Light Web App
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-planet-kaggle-competition-satellite-image-analysis">
+                  Project: Planet Kaggle Competition - Satellite Image Analysis
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/job-genia-technology-a-nanopore-based-dna-sequencer">
+                  Job: Genia Technology a nanopore-based DNA sequencer
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-catalyst-frame-microscope-part1-ideation-and-prototyping">
+                  Startup: Catalyst Frame Microscope Part1 - Ideation and Prototyping
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-catalyst-frame-microscope-part2-the-business-of-running-a-business">
+                  Startup: Catalyst Frame Microscope Part2 - The Business of Running a Business
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-catalyst-frame-microscope-part3-marketing-and-public-relations">
+                  Startup: Catalyst Frame Microscope Part3 - Marketing and Public Relations
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-catalyst-frame-microscope-part4-manufacturing-there-be-dragons">
+                  Startup: Catalyst Frame Microscope Part4 - Manufacturing... There be Dragons
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-catalyst-frame-microscope-part5-looking-back">
+                  Startup: Catalyst Frame Microscope Part5 - Looking Back
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-diy-handsfree-computer-interface-for-under-200">
+                  Project: DIY Hands-free Computer Interface for Under $200
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/project-plant-pixels">
+                  Project: Plant Pixels
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/research-bioinformatic-e-coli-simulation">
+                  Research: Bioinformatic E. coli Simulation
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/startup-scholars-protutoring">
+                  Startup: Scholars Protutoring
+                </a>
+              </div>
+              
+              
+            
+
+              
+              <div class="collection">
+                <a href="/personal-clear-cold-skies">
+                  Personal: Clear Cold Skies
+                </a>
+              </div>
+              
+              
+            
+            </div>
+          </div>
+          
+        
+        
+
+      
+    </nav>
+  </div>
+  <!-- style below blocks out the mobile nav toggle only when nav is loaded -->
+  <style>.mobile-nav-toggle-label { display: inline-block !important; }</style>
+
+
+</div>
+        </div>
+      </header>
+
+      
+        
+          
+            
+              
+                <div id="promotedGalleryWrapper" class="sqs-layout promoted-gallery-wrapper"><div class="row"><div class="col"></div></div></div>
+                
+                  
+                
+              
+            
+          
+        
+      
+
+
+      
+      
+      
+
+      <main id="page" role="main">
+        
+        <!--
+        --><!--
+        --><div id="folderNav" data-content-field="navigation-folderNav">
+  <div class="folder-nav-toggle"></div>
+  <nav class="folder-nav" role="navigation">
+    <ul>
+    <li class="nav-section-label">Work In-Depth</li>
+    
+
+      
+      <li class="page-collection"><a href="/ideas-december-2024-release">Ideas: December 2024 Release</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/research-aging-bioinformatics">Research: Aging Bioinformatics</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/ideas-november-2024-release">Ideas: November 2024 Release</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/ideas-september-2024-release">Ideas: September 2024 Release</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/ideas-june-2024-release">Ideas: June 2024 Release</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/personal-defining-actions">Personal: Defining actions</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection active-link"><a href="/ideas-february-2024-release">Ideas: February 2024 Release</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/project-chatai">Project: ChatAI</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/research-functions-of-gene-duplication">Research: Functions of Gene Duplication</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/project-drone-delivery-kaggle">Project: Drone Delivery Kaggle</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/project-haptic-sense">Project: Haptic Sense</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/project-easycopyio-web-app">Project: EasyCopy.io Web App</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/project-pandemic-data-analysis">Project: Pandemic Data Analysis</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/contract-intrmodl">Contract: Intrmodl a intermodal shipping company</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/job-prismai">Job: Prism.AI</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/project-online-community-web-app">Project: Online Community Web App</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/contract-robotic-microscope-prototype">Contract: Robotic Microscope Prototype</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/contract-purdue-alumni-association-chrome-extension">Contract: Purdue Alumni Association Chrome Extension</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/startup-journal-light-web-app">Startup: Journal Light Web App</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/project-planet-kaggle-competition-satellite-image-analysis">Project: Planet Kaggle Competition - Satellite Image Analysis</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/job-genia-technology-a-nanopore-based-dna-sequencer">Job: Genia Technology a nanopore-based DNA sequencer</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/startup-catalyst-frame-microscope-part1-ideation-and-prototyping">Startup: Catalyst Frame Microscope Part1 - Ideation and Prototyping</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/startup-catalyst-frame-microscope-part2-the-business-of-running-a-business">Startup: Catalyst Frame Microscope Part2 - The Business of Running a Business</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/startup-catalyst-frame-microscope-part3-marketing-and-public-relations">Startup: Catalyst Frame Microscope Part3 - Marketing and Public Relations</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/startup-catalyst-frame-microscope-part4-manufacturing-there-be-dragons">Startup: Catalyst Frame Microscope Part4 - Manufacturing... There be Dragons</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/startup-catalyst-frame-microscope-part5-looking-back">Startup: Catalyst Frame Microscope Part5 - Looking Back</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/project-diy-handsfree-computer-interface-for-under-200">Project: DIY Hands-free Computer Interface for Under $200</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/project-plant-pixels">Project: Plant Pixels</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/research-bioinformatic-e-coli-simulation">Research: Bioinformatic E. coli Simulation</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/startup-scholars-protutoring">Startup: Scholars Protutoring</a></li>
+      
+
+      
+
+    
+
+      
+      <li class="page-collection"><a href="/personal-clear-cold-skies">Personal: Clear Cold Skies</a></li>
+      
+
+      
+
+    
+    </ul>
+  </nav>
+</div><!--
+        --><div id="content" class="main-content" data-content-field="main-content" data-collection-id="65caa1484d22ba29d24ba254" data-edit-main-image="">
+         <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1734484222783" id="page-65caa1484d22ba29d24ba254"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-6b012e81a6944fd5fb96"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h1 style="white-space:pre-wrap;">Ideas: February 2024 Release</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-aspect-ratio="60" data-block-type="5" id="block-f0c2ff76be6bef5950e2"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:6486px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:60%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/44717e29-b87e-4579-b9f3-8a1c2073981d/alexander-jawfox-ng7Yynar8Hw-unsplash.jpg" data-image="https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/44717e29-b87e-4579-b9f3-8a1c2073981d/alexander-jawfox-ng7Yynar8Hw-unsplash.jpg" data-image-dimensions="6486x4324" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/44717e29-b87e-4579-b9f3-8a1c2073981d/alexander-jawfox-ng7Yynar8Hw-unsplash.jpg" width="6486" height="4324" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/44717e29-b87e-4579-b9f3-8a1c2073981d/alexander-jawfox-ng7Yynar8Hw-unsplash.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/44717e29-b87e-4579-b9f3-8a1c2073981d/alexander-jawfox-ng7Yynar8Hw-unsplash.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/44717e29-b87e-4579-b9f3-8a1c2073981d/alexander-jawfox-ng7Yynar8Hw-unsplash.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/44717e29-b87e-4579-b9f3-8a1c2073981d/alexander-jawfox-ng7Yynar8Hw-unsplash.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/44717e29-b87e-4579-b9f3-8a1c2073981d/alexander-jawfox-ng7Yynar8Hw-unsplash.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/44717e29-b87e-4579-b9f3-8a1c2073981d/alexander-jawfox-ng7Yynar8Hw-unsplash.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/44717e29-b87e-4579-b9f3-8a1c2073981d/alexander-jawfox-ng7Yynar8Hw-unsplash.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-10719af504ac169b1b2f"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h2 style="white-space:pre-wrap;">The motivation</h2><p class="" style="white-space:pre-wrap;">The ideas section is a place to offload and share various ideas I’ve come up. Although these are only the ideas that have already been implemented, tested, something I’m not interested in doing, or technically incomplete (meaning there’s various technical progress that needs to be accomplished before it’s applicable), however, it has definitely been conceived by me independently. It serves to share the kind of practical imagination I have but also to share the journey into the future:</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_7511"><div class="sqs-block-content"><span id='organ-specific-chimera'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_7701"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Organ specific chimera</h3><p class="" style="white-space:pre-wrap;">The core idea is that you have say a human heart growing in a pig body, hence the organ specific chimera. Many chimeras have been produced, basically by introducing implant stem cells into the blastocyst embryo and allowing it to grow to maturation. However in a organ specific chimera, the host has a specific organ genetically knocked out, allowing the donor cells to grow and take the place of the organ.</p><p class="" style="white-space:pre-wrap;">However, this had already been done initially <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6861770/" target="_blank">here</a>. What they found was that the idea does work, they tested it between two mice, knocking out the host pancreas, and found the donor cells took up ~80% of the pancreas in the final healthy chimera. However, what they also found was that the larger the gap between the two species, the less the donor cells contributed to the final chimera. There was a <a href="https://youtu.be/nUwmKwsPfls?si=Z5AdUiNQQth5z1Fl" target="_blank">youtube video</a> that shared that researchers have tried growing human kidneys (using human iPSCs) in pigs, and resulted in proto-kidneys with about half human content.</p><p class="" style="white-space:pre-wrap;">This method does have bioethical concerns, but overall, this is a possible future in growing replacement organs which I believe will come before other methods like 3D printing kidneys. </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_13560"><div class="sqs-block-content"><span id='housing-musical-chairs'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_13744"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Housing musical chairs</h3><p class="" style="white-space:pre-wrap;">There is a housing crunch as of right now, and one of the issues tying up housing supply is that if you sell your house what if you can’t buy a new one. So what if it was setup so that you selling your house and buying a new one is orchestrated by a third-party company. And it might not seem like much, but it’s kind of like a checkers board where every spot is filled up, there’s no way for pieces of move. However, if you can switch positions between pieces, now the whole board can end up in a totally different arrangement.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_15332"><div class="sqs-block-content"><span id='corruption-bounties'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_15397"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Corruption bounties</h3><p class="" style="white-space:pre-wrap;">There are already bounties for insider trading that has proven successfully. Why don’t we expand on that idea, and apply it to all forms of corruption. It just seems like a huge check against corruption because corruption then becomes as successful as only it’s weakest link. The bounty could be a cash payout along with protection.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_16788"><div class="sqs-block-content"><span id='streamlined-journalism-payments'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_16853"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Streamlined journalism payments</h3><p class="" style="white-space:pre-wrap;">There really should be a unified way to paying for quality articles across various news and magazine outlets, and the news and magazine outlets are the ones to do it. Design wise I just don’t want to have to manage dozens of $4 a month subscriptions to get my news. Apple news does this, but it’s siloed within the news app rather than an open solution similar to Stripe.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_18268"><div class="sqs-block-content"><span id='ev-charging-batteries'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_18333"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">EV charging batteries</h3><p class="" style="white-space:pre-wrap;">What if EV charging stations were all connected to a giant battery to smooth out power demands, and make it so that they don’t need improvements in electricity infrastructure in order to be built. Plus those batteries could end up feeding electricity back to the grid when necessary.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_19625"><div class="sqs-block-content"><span id='direct-ground-water-aquifer-recharge'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_19789"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Direct ground water aquifer recharge</h3><p class="" style="white-space:pre-wrap;">So ground water aquifers, if shallow, can take days to recharge in rainy weather, but deep aquifers can take up to centuries to recharge. However, why don’t we just skip the ever so slow percolation of water down into those deep aquifers, and drill holes directly in them to pump water down for storage? Well it turns out people are already doing that, however given the recent spat of droughts, people are starting to invests more into it, given that these aquifers represent huge natural form of water storage.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_21070"><div class="sqs-block-content"><span id='desalination-and-waste-water-combination'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_21230"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Desalination and waste water combination</h3><p class="" style="white-space:pre-wrap;">Desalination has an inherent habit of producing super salty leftover water called brine, this brine if dumped back into the environment can cause substantial damage. However, what if we basically separate out fresh water from salt water (desalination), use the fresh water, recombine the waste water with the brine, and then end up with what you started with ocean water. Well, it turns out people are doing this where it’s possible, and it’s a great way to solve a potentially controversial problem.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_22632"><div class="sqs-block-content"><span id='atomic-recycler'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_22788"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Atomic recycler</h3><p class="" style="white-space:pre-wrap;">As we dig up and use up various elements in the earth’s crust and then proceed to ultimately dump it into landfills, we’re going to run out of places to dig and run out of elements to use in our technologies and products. In fact, landfills would eventually become the future mines for these elements. So what I propose is that we take all the trash and find some way to just rip all the molecules apart into component atoms and sort it based off the kind of element it is. Maybe it’s turning it into plasma and using something like a mass spectrometer, or maybe it’s something else. But the idea is compelling, if not potentially necessary in the long term.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_24039"><div class="sqs-block-content"><span id='infinite-capacity-battery'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_24104"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Infinite capacity battery</h3><p class="" style="white-space:pre-wrap;">So I’ve been thinking about energy storage, since renewables like wind and solar energy are produced intermittently depending on the time of day and weather, and we need some way of storing huge amounts of energy in order make the switch to totally clean energy. (Technically I think this may be solved through underground stores of hydrogen combined with steam turbines). However, it got me thinking in all the various ways you can store energy, and there was one idea that stood out, a light based battery. Light does not take up space and has no mass, which means if you can find a way to trap light, the capacity of the battery could be as big as you’d want it. This could pave the way not only for clean energy storage but interstellar space ships along with a whole new world of electronics/transportation/etc. This one does have quite a few technical hurdles, but it’s a tantalizing possibility.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_25338"><div class="sqs-block-content"><span id='personal-cooling-unit'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_25403"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Personal cooling unit</h3><p class="" style="white-space:pre-wrap;">As climate change results in more extreme weather, hot weather in particular will be difficult to deal with. The only way to cool off is to use air conditioners that will likely use fossil fuels which only exacerbates climate change. So why not instead of cooling an entire area, you just cooled your body that should be much more efficient. This is the fundamental idea behind at least my vision for why this kind of product exists, not just convenience, but necessity. From my time studying as an EMT, I learned there are certain areas that have large blood flow, which was used to typically treat heat stroke, but would be ideal places to generally cool the body. These areas are neck, arm pits, and groin area. Of the choices the neck would be a good place to start. Blowing air to the area helps, but actually reducing the temperature is better. One of the ways to do this is with peltiers, the only downside is that they’re very inefficient like 5% of the energy put into it actually moves that much heat energy, but batteries do carry a lot of energy, so it’s still doable. So in a way it’s not to my surprise that someone came up with a product for it, one of them is <a href="https://a.co/d/dZEcz4N" target="_blank">Torras Coolify 3</a>. It’s a cool product, one that I’ll probably try in the upcoming summer. However, I believe there are still other ideas and improvements in this product category that I’ll share in the future.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_26665"><div class="sqs-block-content"><span id='smartphone-improvements'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_26730"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Smartphone improvements</h3><p class="" style="white-space:pre-wrap;">So these are just some random design ideas for mobile OS: 1. Auto-transcripts for podcasts, similar to how Kindle has books and audiobooks that play together. This idea is already being implemented in the next release of iOS, but I was already playing with this idea by playing a podcast on my iphone while running dictation on my mac. 2. Mobile OSs could allow you to hear a voicemail as it’s being left, just like old-school answering machines. So that you can screen your calls and if it’s from someone you expect you can pick it up. This is rather than the current iOS implementation relying on voice transcription 3. Smartphones could have a 180 degree rear facing camera, so you can take a photo with a good camera knowing everything is within frame without having to point it, plus it’s a full 180 degree field of view picture or video that could be used like in VR/MR. Or incorporate a small mirror on the backside of the smartphone to help center the shot.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_27834"><div class="sqs-block-content"><span id='next-gen-wheelchair'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_27899"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Next-gen wheelchair</h3><p class="" style="white-space:pre-wrap;">I was thinking about how my mom is getting pretty old, and that unfortunately as she gets older she won’t be able to travel anymore as a result. However, what if we made “wheelchairs” dramatically better? What if we used Boston Dynamics dog as a wheelchair, the walking function would be used to go up/down stairs/over obstacles, and motors on the feet would be used for general travel? It’s an idea for making all the non-wheelchair accessible areas of the world suddenly available, and make getting old less of an isolating, trapping, and lonely experience.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_29009"><div class="sqs-block-content"><span id='virtual-mailing-addresses'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_29145"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Virtual Mailing addresses</h3><p class="" style="white-space:pre-wrap;">It’s an idea very similar to how Apple allows you to create a virtual email addresses for every service you sign up for, never sharing your main email, and allowing you to block a service if you want. There’s also virtual credit cards on a similar idea. However, this idea is a virtual physical mailing address. A third-party service would handle translation of a virtual address into the corresponding physical address. Access would be provided only to the major shipping companies like USPS, FedEX, UPS, etc or companies where services rely on where you live. However, if you want to publicly share a virtual address that forwards to your physical address, I would imagine that could be setup on Google/Apple maps. Having virtual addresses would make something like moving easy, because you wouldn’t need to change your address on all the services you use, you just change it once where your virtual address forwards to. Finally a virtual address could be used to link to the GPS location, this would be useful for places around the globe that don’t have official street designations like slums (there was some company already doing this when I checked).</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_30730"><div class="sqs-block-content"><span id='concept-touchscreen-trackpad'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_30861"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Concept touchscreen trackpad</h3><p class="" style="white-space:pre-wrap;">Okay this is only a short concept that I’m not sure how well it’ll work out, but what if the laptop trackpad was also a touchscreen display? Maybe it could also be used with a stylus, and maybe it could be more useful than the ill-fated Apple touchbar.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_31880"><div class="sqs-block-content"><span id='sleep-guard'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_31945"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Sleep guard</h3><p class="" style="white-space:pre-wrap;">Device that watches over you while you sleep alerting you if there are any intruders. This could be useful for travelers. Could work using 360 degree cameras with an app that lets you highlight areas for movement like the door and windows.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_33011"><div class="sqs-block-content"><span id='apple-health-app'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_33076"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Apple Health app</h3><p class="" style="white-space:pre-wrap;">The current apple health app is terrible: 1. Your favorited health metrics are ordered alphabetically with no option to manually set the order. 2. For what’s supposed to be the summary, it’s incredibly long with all sorts of random highlights, other things you can setup, articles, and app advertisements. This is supposed to be a dashboard for your health. It should provide widgets for each of your health metrics with the ability to organize it to your liking. And given apple’s huge focus on the apple watch’s health features, this is the way it should work.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_34053"><div class="sqs-block-content"><span id='smartphone-satellite-communications'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_34173"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Smartphone satelLite communications</h3><p class="" style="white-space:pre-wrap;">There are small bluetooth satellite communicators that can pair with your phone like this <a href="https://www.garmin.com/en-US/c/outdoor-recreation/satellite-communicators/" target="_blank">one</a> that allow you to send SMS or emergency beacons globally. But why not skip the extra device and build it straight into a smartphone? The antenna isn’t crazy huge, it’s doable while not becoming design-wise an adverse addition. And soon after I figured that out, SpaceX and Apple came out with plans to incorporate satellite communications into regular smartphones. This is useful beyond just being stuck in the middle of nowhere, imagine a disaster hit your area and you don’t have cell service, or imagine traveling and the sim card you bought stops working. Well as long as you can find a view of the sky, you can still keep in touch and reach out for help if necessary. It changes smartphones into true universal communicators.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_50315"><div class="sqs-block-content"><span id='conversations-with-ear-protection'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_50380"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Conversations with ear protection</h3><p class="" style="white-space:pre-wrap;">Often times people need to wear ear protection, but need to be able to talk with the people around them. However, ideally there’s a streamlined way of doing it. So how about using the signal strength of the people around you to determine how loud you can hear them. The further away the lower the volume. Just like if you weren’t wearing ear protection.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_51373"><div class="sqs-block-content"><span id='massage-robot'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_51485"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Massage robot</h3><p class="" style="white-space:pre-wrap;">I have a lot of tense muscles in my back and yes I can use a foam roller or something else, but nothing beats actually putting pressure on a point and massaging it exactly the way you want. This is why a table with a massage gun attached to a 5 axis or something robot arm that you can manually control could feel really good. And again somewhat unsurprisingly, it showed up at the 2024 CES.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_52409"><div class="sqs-block-content"><span id='better-digital-payments'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_52474"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Better digital payments</h3><p class="" style="white-space:pre-wrap;">So the current model of digital payments is where anyone who has your card info can charge you however much they want, and the only way to stop them is to stay on top of your transactions and balances and report fraud. Businesses should request a payment and you pay them specifically that. And at the same time, they can provide a much more detailed receipt of that transaction as well compared to the typically indecipherable single line of text.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_53805"><div class="sqs-block-content"><span id='translation-with-beam-forming-microphones'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_53910"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Translation with beam-forming microphones</h3><p class="" style="white-space:pre-wrap;">Basically the beam forming microphones will pick up what you’re saying along with what the person in front of you is saying, but as two separate channels. These two channels are then transcribed and translated in real-time at the same time and displayed on a smartphone. This means you can talk as if you were in a normal conversation, and have successful translation without having to worry about pausing each time you say something, if there’s a slight interruption from one of the speakers while you’re talking, or if someone starts talking loudly nearby.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_54799"><div class="sqs-block-content"><span id='unified-communications-app'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_54899"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Unified communications app</h3><p class="" style="white-space:pre-wrap;">The core idea is that you could have a single app that combined video chat, screen sharing, phone calls, voicemails, text messages, emails, p2p file transfers, and maybe even more. The main draws are: 1. You’d have a single seamless history of what’s been said, which doesn’t seem all that important, but imagine how spread out this information is between the different apps on your phone. 2. You can seamlessly switch between these forms of communication as well. For example, you’re on the phone with the repair man and switching to a video call, text messaging customer support and switching to a screen share, calling social security and sending a file in the same conversation. Organizations could plug into this unified app similar to how Apple Pay or Google Pay works; they could be given call center software or better yet APIs given to call center software companies. You can have verified organizations and users, so that you don’t have scammers constantly calling you. Apple or Google could build this today, this would just be a power user app that’s opt-in only, and all the information from the unified app is reflected in the regular apps as well (so a text in the unified app shows up as a text in Messages). Given that software updates nowadays are hardly revolutionary, this could be pretty interesting.</p><p class="" style="white-space:pre-wrap;">Update (12/17/24): Google allows you to set the default phone and text app, and now finally Apple has allowed the same. Making this idea more and more possible.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_56038"><div class="sqs-block-content"><span id='digital-security-review'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_56103"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Digital security review</h3><p class="" style="white-space:pre-wrap;">Have you ever taken a really good look at the security dependencies that your digital life rests on? Well I did and it’s kind of a mess. So the core logins I checked were: emails, password manager, apple account (since I use iPhone and apple hardware), cellular service for SMS management, and authenticator code generators.</p><p class="" style="white-space:pre-wrap;">1Password is a very popular password manager that handles all your passwords and even generating authenticator codes. But what you probably didn’t know was that to log back into it after say replacing your device whether lost or stolen or destroyed in a fire or something, it actually requires an authenticator code from another app to log in.</p><p class="" style="white-space:pre-wrap;">Then here we get to authenticator codes. They used to reside only on a device but now they’re getting cloud backups. However, there’s still hick ups. Google Authenticator only produces mobile apps without any desktop apps, so you need a smartphone or tablet to use it. Authy by twilio the other popular authenticator is discontinuing it’s desktop app as well. And you better remember that password for your authenticator because otherwise you’ll be resetting your authenticator across all your services. And this is also an issue, the ability to reset your authenticator by using back ups like SMS removes a critical point about using the authenticator codes. If SMS is the backup, why bother with using an authenticator code to begin with. You might imagine this is a silly problem with small websites, but when I needed to redo my AWS authenticator it kicks it back to a phone call with a code. That’s right Amazon Web Services, which large websites/apps ultimately have the same level of security.</p><p class="" style="white-space:pre-wrap;">Then let’s get to SMS, how is that secured? Because even though there’s the widely held view that SMS is not a secure way to handle authentication, it is very convenient so everyone uses it anyways. Well I checked my cellular service security, which is AT&amp;T: Password reset is either a text message to your phone number, an email to your email account, or security questions. The two factor authentication reset is an SMS code to any device under your AT&amp;T account. And that’s an issue, if you have other devices on your account, that means someone could swipe their device and get access to your two factor SMS codes.</p><p class="" style="white-space:pre-wrap;">So let’s consider a scenario where you’re traveling with your smartphone and laptop (probably your only mobile device and computer), and you lose them or it gets stolen. How do you get back in? Apple login can use a recovery key (which you may or may not have easy access to), authentication with another apple device (which you don’t have), or SMS (which you can’t do because you can’t login although I guess you could create a new apple account although you’d need a new SIM as well). How do you get a new SIM with your number on it, well I haven’t tried it so I don’t know, but it seems like it could be pretty convoluted because you basically need to prove you are you without any in-falsifiable proof (particularly if you’re the only person on that cellular account). And proving you are who are you are without that concrete proof creates a security hole for criminals to get in. Also if someone swipes your phone while it’s unlocked well now they have access to all your SMS codes until you lock out your phone.</p><p class="" style="white-space:pre-wrap;">Emails (well gmail since that’s what I use) they’re protected by either a cross-app login, SMS, back up codes, recovery email, and recovery phone. But it’s only as secure as it’s weakest link, SMS is like we’ve discussed interceptable, a recovery email could be hacked, and a recovery phone stolen.</p><p class="" style="white-space:pre-wrap;">As of time of writing, the recent update to iOS for “stolen device protection” is a step in the right direction in terms of realizing and neutralizing key security vulnerabilities. Before the update as long as someone looked over your shoulder and got your lock screen passcode, they could reset your iCloud recovery code, reset your iCloud account password, and have access to all the saved passwords under the iCloud password manager. So a very substantial amount of damage could be caused. But now with the requirement of more biometrics, more requirements, and overall changes, it’s a much better situation.</p><p class="" style="white-space:pre-wrap;">Security is seen as a balance between what’s secure and what’s convenient, but as you can see what we have today is a bit of a mess and I believe we can do better.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_57163"><div class="sqs-block-content"><span id='modular-housing'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_57254"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Modular Housing</h3><p class="" style="white-space:pre-wrap;">Modular housing has the potential to rapidly accelerate the production of housing as well as driving down costs across the world. However, the business model approach of these modular manufacturers, at least from what it seems, is that they sell the completed housing directly. This is in competition with the rest of companies that produce traditional housing currently. My proposal is to sell the modular parts directly to these companies, so that they can reap a portion of the benefits, giving them a competitive advantage, and greatly accelerate the adoption of modular building processes. Then for the modular manufactures, they can capitalize on economies of scale and further drive down costs. Overall, it seems like a much more synergistic approach to solving the problem. </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1719094483815_57994"><div class="sqs-block-content"><span id='thermoregulating-clothes'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1719094483815_58068"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;">Thermoregulating clothes</h3><p class="" style="white-space:pre-wrap;">Imagine a jacket or pants that have an adjustable amount of insulation by using air. It could use a small quiet battery powered pump to fill up bladders in between the fabric when it’s cold and empty the bladders when it gets hot. This could all be regulated by the internal temperature that the user is experiencing. It’s a good idea I came up with, and it was so good it has already been incorporated in the SR-71 flight suit (<a href="https://www.youtube.com/watch?v=gkyVZxtsubM&amp;t=2858s" target="_blank">SR-71 Link</a>).</p><p class="" style="white-space:pre-wrap;"><br></p><h2 style="white-space:pre-wrap;">INNOVATIVE Unpublished IDEAS</h2>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1723186567666_15751"><div class="sqs-block-content"><span id='smart-chemotherapeutics'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1723186567666_15862"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;"><strong>Smart chemotherapeutics</strong></h3><p class="" style="white-space:pre-wrap;">Update (6/18/24): Recently discovered a chain of sources that shows this is already public, starting with this <a href="https://youtu.be/_L-t7Esup6s?si=iXIpHByfs_lA0ZHV&amp;t=169" target="_blank">youtube video</a>. But basically the idea is to use genetic engineering to reengineer tumor suppressor genes back into the cells after they’ve been mutated by the cancer. What makes this smart is that if you replace a healthy tumor suppressor gene in a healthy cell with another healthy tumor suppressor gene essentially nothing happens, only the cancer cells are affected by this. This represents an entirely different approach to dealing with cancer.</p><p class="" style="white-space:pre-wrap;"><br></p><h3 style="white-space:pre-wrap;"><strong>Research in genetic engineering</strong></h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1734036154501_47855"><div class="sqs-block-content"><span id='research-in-the-how-and-why-of-aging'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1734036154501_47921"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;"><strong>Research in the how and why of aging</strong></h3><p class="" style="white-space:pre-wrap;">Update (12/12/24): I was reading through some research when I found a paper describing some of the experiments I wanted to conduct. The paper is <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10077971/" target="_blank">here</a>. The first experiment I wanted to conduct is what’s the relationship between the different hallmarks of aging. And what this paper describes is that cellular senescence, telomere attrition, and genomic instability do not cause epigenetic aging, while nutrient sensing, mitochondrial activity, and stem cell composition do affect epigenetic aging. What this paper does not check is whether epigenetic aging causes these various hallmarks of aging, but it still checks one causal direction, which is very fascinating information. The other experiment that they did that I wanted to do was to check the age of stem cells to see if they’re younger than the differentiated tissue they create, and that when we check the epigenetic age of tissues we’re looking at an average. The reason why I wanted to check this is it was just a hunch. And it turns out stem cells are exactly that, younger with tissue’s epigenetic age being an average of stem cells and differentiated cells. Here’s to hoping we discover more tantalizing research.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><h3 style="white-space:pre-wrap;"><strong>Electronic voting</strong></h3><h3 style="white-space:pre-wrap;"><strong>MR/AR sensory feedback</strong></h3><h3 style="white-space:pre-wrap;"><strong>Next-gen computer interface</strong></h3><h3 style="white-space:pre-wrap;"><strong>Next-gen quadcopter interface</strong></h3><h3 style="white-space:pre-wrap;"><strong>Personal cooling unit alternative</strong></h3><h3 style="white-space:pre-wrap;"><strong>Improvements to vehicle control and safety</strong></h3><h3 style="white-space:pre-wrap;"><strong>Enhanced FaceID</strong></h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1723186567666_64182"><div class="sqs-block-content"><span id='next-gen-calculator'></span></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1723186567666_64247"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 style="white-space:pre-wrap;"><strong>Next-gen calculator</strong></h3><p class="" style="white-space:pre-wrap;">Update (6/10/24): Following Apple’s release of iPadOS 18, it included the next-gen calculator mentioned here called “<a href="https://www.apple.com/newsroom/2024/06/ipados-18-introduces-powerful-intelligence-features-and-apps-for-apple-pencil/#:~:text=with%20Math%C2%A0Notes-,An%20all%2Dnew%20Math%20Notes%20calculator%20allows%20users%20to%20type%20or,accessible%20in%20the%20Notes%20app%20in%20the%20new%20Math%20Notes%20folder.,-Pause%20playback%20of" target="_blank">Math Notes</a>”. For me, it was internally called “Smart Paper”, because It’s basically an app that integrated a calculator into a sheet of digital paper. It’ll use computer vision to read the the mathematical equations/expressions/unit conversions/etc, and have them solved inline using something like Wolfram Alpha. Even inputting an equation or mathematical notation in general into a computer is normally a very painful process (if you’re curious, one example is to look up how to use LaTeX for mathematical notation). This reduces the need to manually transfer things from paper into a calculator and back to the paper allowing seamless integration of what is written and the desired transformation. This could be extended beyond the notation demonstrated by Apple at the moment into calculus, linear algebra, differential equations, partial derivatives, statistics, probability, etc. Overall, this software would be an invaluable improvement to a core tool for students, engineers, and scientists.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><h3 style="white-space:pre-wrap;"><strong>Probability calculator</strong></h3><h3 style="white-space:pre-wrap;"><strong>Fashionable wearable camera</strong></h3><h3 style="white-space:pre-wrap;"><strong>Heads up display alternative</strong></h3><h3 style="white-space:pre-wrap;"><strong>Self-driving car technology</strong></h3><h3 style="white-space:pre-wrap;"><strong>Revolutionary approach to flash cards</strong></h3><h3 style="white-space:pre-wrap;"><strong>Account authentication and recovery final fallback</strong></h3><h3 style="white-space:pre-wrap;"><strong>AI reasoning</strong></h3><h3 style="white-space:pre-wrap;"><strong>Wind powered kinetic art</strong></h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div></div></div></div>
+        </div><!--
+        -->
+        
+      </main>
+
+      <div id="preFooter">
+        <div class="pre-footer-inner">
+          <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Pre-Footer Content" data-type="block-field" data-updated-on="1496730818703" id="preFooterBlocks"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+        </div>
+      </div>
+
+      <footer id="footer" role="contentinfo">
+        <div class="footer-inner">
+          <div class="nav-wrapper back-to-top-nav"><nav><div class="back-to-top"><a href="#header">Back to Top</a></div></nav></div>
+          
+
+
+          
+          <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1728270733865" id="footerBlocks"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_10_1491618562978_8631"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <p style="text-align:center;white-space:pre-wrap;" class=""><a href="mailto:contact@quickshift.io">contact@quickshift.io</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+</div></div></div></div></div>
+        </div>
+      </footer>
+
+    </div>
+
+    <script defer="defer" src="https://static1.squarespace.com/static/ta/52a74d9ae4b0253945d2aee9/1052/scripts/site-bundle.js" type="text/javascript"></script>
+    
+
+  </body>
 </html>
