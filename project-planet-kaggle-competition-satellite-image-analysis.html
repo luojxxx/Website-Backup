@@ -1,6 +1,6 @@
 <div class="main-content" data-collection-id="591cf8905016e1c2af3fcb5e" data-content-field="main-content" data-edit-main-image="" id="content">
-<div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1707464854309" id="page-591cf8905016e1c2af3fcb5e"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-d2d23568d23a0c2eca8d"><div class="sqs-block-content">
-<div class="sqs-html-content">
+<div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1707464854309" id="page-591cf8905016e1c2af3fcb5e"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-d2d23568d23a0c2eca8d"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <h1 style="white-space:pre-wrap;">Project: Planet Kaggle Competition - Satellite Image Analysis</h1>
 </div>
 </div></div><div class="sqs-block image-block sqs-block-image" data-aspect-ratio="95.29243937232525" data-block-type="5" id="block-yui_3_17_2_11_1495049797570_3831"><div class="sqs-block-content">
@@ -19,8 +19,8 @@
 </div>
 </figure>
 </div>
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_11_1495049797570_4109"><div class="sqs-block-content">
-<div class="sqs-html-content">
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_11_1495049797570_4109"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <h2 style="white-space:pre-wrap;">The motivation</h2><p class="" style="white-space:pre-wrap;">When machine learning finally evolved into a technology usable by the masses, it seemed like a super power. The whole idea of asking a computer to recognize something for you, and have it look through more data and with greater consistency than a person could do was game-changing.</p><p class="" style="white-space:pre-wrap;">But being new to the game, I needed to give this newfound superpower some exercise, so I went to Kaggle to find a competition to stretch my legs. Luckily there was a cool competition to classify satellite imagery in order to protect the rainforest. The idea was that the images were broken down into smaller tiles that were individually classified so that you could monitor how human developments and the rainforests were changing.</p>
 </div>
 </div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_3_1495482034305_35142"><div class="sqs-block-content">
@@ -39,8 +39,8 @@
 </div>
 </figure>
 </div>
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_8_1495572235979_11949"><div class="sqs-block-content">
-<div class="sqs-html-content">
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_8_1495572235979_11949"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <h2 style="white-space:pre-wrap;">Random Forest with RGB Statistics</h2><p class="" style="white-space:pre-wrap;">Luckily someone posted a quick getting started script that ran through a basic classifier using RGB statistics, which also included basic data import and formatting the submission. And while it originally called for the XGBClassifier, I substituted it out for a random forest model, since that was a part of the well-maintained sci-kit learn library. Plus random forest is my favorite machine learning algorithm being quick and usually getting a decent result =)</p><p class="" style="white-space:pre-wrap;">The RGB statistics was an interesting choice of feature using the mean, standard deviation, max, min, kurtosis, and skewness of each RGB channel across the image. Since these are aggregate statistics across the image, it removes the spatial information making the classifier essentially translationally invariant. Meaning white clouds could show up on any part of the image, and be classified as clouds. Of course, this also means white buildings could be confused as clouds or vice versa, since there is a substantial amount of information being lost.</p><p class="" style="white-space:pre-wrap;">But either way I gave it a shot, the random forest was set with 100 trees with all else being defaults, a random seed was set, the data was shuffled, and with 40479 samples a 80/10/10 split for training/validation/test sets. This was run at 5-times replicate while re-shuffling the dataset for each run. The aggregate results on the test set are reported below.</p>
 </div>
 </div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_3_1495409701835_11472"><div class="sqs-block-content">
@@ -59,8 +59,8 @@
 </div>
 </figure>
 </div>
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_3_1495409701835_11750"><div class="sqs-block-content">
-<div class="sqs-html-content">
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_3_1495409701835_11750"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <p class="" style="white-space:pre-wrap;">Individual F-Beta Scores for each run (beta=2 and average=sample):</p><p class="" style="white-space:pre-wrap;">0.83332, 0.83633, 0.84038, 0.83256, 0.83632</p><p class="" style="white-space:pre-wrap;">Combined F-Beta score: 0.83578</p><p class="" style="white-space:pre-wrap;">As we can see it does pretty well, even though it's essentially just looking at the the distribution of each RGB channel. However, it does particularly poorly on certain high frequency groups such as water and cultivation. To explain why it does poorly on water, it's best to look at some examples.</p>
 </div>
 </div></div><div class="sqs-block gallery-block sqs-block-gallery" data-block-json='{"hSize":null,"floatDir":null,"methodOption":"transient","existingGallery":null,"newWindow":false,"aspect-ratio":"square","aspectRatio":null,"auto-crop":true,"blockAnimation":"none","collectionId":"59234d793a0411d9007cbccb","design":"grid","lightbox":false,"padding":20,"show-meta":true,"show-meta-basic":true,"show-meta-only-title":false,"show-meta-only-description":false,"square-thumbs":true,"thumbnails-per-row":4,"vSize":null,"transientGalleryId":"59234d793a0411d9007cbccb"}' data-block-type="8" id="block-yui_3_17_2_3_1495482034305_18235"><div class="sqs-block-content">
@@ -142,8 +142,8 @@
 #block-yui_3_17_2_3_1495482034305_18235 .sqs-gallery-block-grid .sqs-gallery-design-grid { margin-right: -20px; }
 #block-yui_3_17_2_3_1495482034305_18235 .sqs-gallery-block-grid .sqs-gallery-design-grid-slide .margin-wrapper { margin-right: 20px; margin-bottom: 20px; }
 </style>
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_3_1495482034305_18331"><div class="sqs-block-content">
-<div class="sqs-html-content">
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_3_1495482034305_18331"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <p class="" style="white-space:pre-wrap;">So sometimes brown means ground and sometimes brown means water. The reason why water is difficult is because we're dealing with very murky waters that isn't blue, and without additional information the classifier will have trouble telling the difference.</p><h2 style="white-space:pre-wrap;">Random Forest with RGB Statistics + Edge/Line Statistics</h2><p class="" style="white-space:pre-wrap;">Now there is a characteristic of water that we can exploit, the surface tends to be completely flat and uniform. This might already be picked up somewhat by the kurtosis and standard deviation, although it is an aggregate statistic over just three channels for the entire image. This sharp peak could be completely muddled by other colors. So if we can provide more information from another perspective, it might help the classifier differentiate and overall perform better.</p><p class="" style="white-space:pre-wrap;">So being flat and uniform, this also means there shouldn't be any edges on the surface of the water. So for fun, practice, and to use it, I implemented a quick website with a custom API to provide a graphical interface to quickly test different settings on some image processing algorithms that will return edges, lines, and corners. If you want to check it out, here's the <a href="https://dreamy-northcutt-31775d.netlify.app/">link</a>.</p>
 </div>
 </div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_3_1495482034305_48877"><div class="sqs-block-content">
@@ -167,8 +167,8 @@
 </figcaption>
 </figure>
 </div>
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_3_1495482034305_49153"><div class="sqs-block-content">
-<div class="sqs-html-content">
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_3_1495482034305_49153"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <p class="" style="white-space:pre-wrap;">In addition, habitation and roads will often times have straight lines, while habitation should also be rich in corners.</p>
 </div>
 </div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_3_1495482034305_55052"><div class="sqs-block-content">
@@ -192,8 +192,8 @@
 </figcaption>
 </figure>
 </div>
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_3_1495482034305_55329"><div class="sqs-block-content">
-<div class="sqs-html-content">
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_3_1495482034305_55329"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <p class="" style="white-space:pre-wrap;">However, we are not tuning the settings for each image, it's only one setting for the entire dataset. Even though one could make a machine learning algorithm to set the image processor settings based on the image, we're not going to do that at the moment. And as we can see below, due to these global settings sometimes they don't work out very well.</p>
 </div>
 </div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_3_1495482034305_74417"><div class="sqs-block-content">
@@ -214,8 +214,8 @@
 </a>
 </figure>
 </div>
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_3_1495482034305_74694"><div class="sqs-block-content">
-<div class="sqs-html-content">
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_3_1495482034305_74694"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <p class="" style="white-space:pre-wrap;">However, we'll still experiment with these additional features. Also to be more specific, we'll be using the sums of each edge/line/corner feature. For example for edges, there'll be an array of all the pixels on the image, and that pixel will either have a positive value representing the edge or zero, then we sum up the values across the array. These sums are appended to the existing RGB statistics training set. Also luckily because the random forest is a decision tree, we don't need to worry about scaling these values.</p><p class="" style="white-space:pre-wrap;">Model was setup with same settings as before with the only difference being the additional edge/line/corner statistics. (The random forest set with 100 trees with all else being defaults, a random seed was set, the data was shuffled, and with 40479 samples a 80/10/10 split for training/validation/test sets. This was run at 5-times replicate while re-shuffling the dataset for each run. The aggregate results on the test set are reported below.)</p>
 </div>
 </div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_41_1495482034305_83322"><div class="sqs-block-content">
@@ -234,8 +234,8 @@
 </div>
 </figure>
 </div>
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_41_1495482034305_83600"><div class="sqs-block-content">
-<div class="sqs-html-content">
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_41_1495482034305_83600"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <p class="" style="white-space:pre-wrap;">Individual F-Beta Scores for each run (beta=2 and average=sample):</p><p class="" style="white-space:pre-wrap;">0.83623, 0.84224, 0.84732, 0.8406, 0.84303</p><p class="" style="white-space:pre-wrap;">Combined F-Beta score: 0.84189</p><p class="" style="white-space:pre-wrap;">Looks like we were able to get a small improvement on average, and only by running randomized replicates we can have some confidence in detecting these small improvements, which is really what separates the top score from the rest. Luckily assuming a normal distribution and unequal variance, the two-sample T-test where the null hypothesis is that the two methods yield identical results on average is rejected with a one-sided p-value of 0.01453.</p><p class="" style="white-space:pre-wrap;">Submitting the results of this model run on the competition test set resulted in a F_beta score of <strong>0.83062.</strong></p><p class="" style="white-space:pre-wrap;">If we wanted to further pursue this direction, we would likely be able to get an even better result if we were to automate the exploration of the image processor hyperparameters. However, there are other things I want to try first.</p><h2 style="white-space:pre-wrap;">Deep Neural Networks on the cloud</h2><p class="" style="white-space:pre-wrap;">So specifically I want to try out deep convolutional neural networks, and training these models is a lot faster with a GPU. Unfortunately my computer is a Mac with a woefully underpowered GPU, so I decided to spin up a EC2 instance on Amazon Web Services.</p><p class="" style="white-space:pre-wrap;">I didn't really trust any of the AMIs that were out there that had this stuff installed (Keras, Tensorflow, Anaconda, CUDA, and cuDNN), so I setup the build process myself writing down the different bash commands I needed to get it done. Here are my notes in case anyone else is interested: </p><pre><code># Setup EC2 instance
 
 sudo apt-get update
@@ -284,8 +284,8 @@ pip install keras</code></pre><p class="" style="white-space:pre-wrap;">And at t
 </div>
 </figure>
 </div>
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_4_1517358199597_43260"><div class="sqs-block-content">
-<div class="sqs-html-content">
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_4_1517358199597_43260"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <p class="" style="white-space:pre-wrap;">Submitting the results of this model run on the competition test set resulted in a F_beta score of <strong>0.88813</strong>. A huge nearly 6% improvement!</p><h2 style="white-space:pre-wrap;">Feature Design</h2><p class="" style="white-space:pre-wrap;">Now there's this thing in machine learning called feature design. And the idea is that you want to make it as easy as possible for your machine learning algorithm to do it's job. So if you can preprocess the input so that it highlights the important information you want your machine learning algorithm to consider, it will perform better.</p><p class="" style="white-space:pre-wrap;">So what I did was combine the pre-trained Xception neural network output with the image RGB statistics into the final output layer. This was because I noticed the image RGB statistics performed better in certain areas compared to the fine tuned pre-trained network alone, particularly with clear, partly_cloudy, cloudy, and haze labels. This makes some sense, because it's essentially how white is the image. Also these labels were assigned to a large percentage of the images, so even a marginal improvement here can have a noticeable impact on overall accuracy.</p>
 </div>
 </div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_17_2_4_1517358199597_65148"><div class="sqs-block-content">
@@ -304,8 +304,8 @@ pip install keras</code></pre><p class="" style="white-space:pre-wrap;">And at t
 </div>
 </figure>
 </div>
-</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_4_1517358199597_65425"><div class="sqs-block-content">
-<div class="sqs-html-content">
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_4_1517358199597_65425"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
 <p class="" style="white-space:pre-wrap;">Submitting the results of this model run on the competition test set resulted in a F_beta score of <strong>0.90007</strong> in position<strong> </strong>91 out of 253 as of writing.</p><h2 style="white-space:pre-wrap;">Conclusion</h2><p class="" style="white-space:pre-wrap;">After hitting the 0.9 threshold, I was pretty much satisfied with the result, and stopped working on it. I essentially got a A-!</p><p class="" style="white-space:pre-wrap;">This was approximately half way through the competition time. Eventually I went back and took a look at the final winning score, it was 0.93317. Not too far off from what I got.</p><p class="" style="white-space:pre-wrap;">It also appeared that the highest scoring competitors had a common optimization of trying out various pre-trained networks to fine-tune and picking the best result. I can see how that can definitely help move the score around 1 or 2 percentage points.</p><p class="" style="white-space:pre-wrap;">Overall, it was extremely fun and I learned a lot. It's super cool to try to build something to help save the Amazon rainforest, and I'm definitely looking for the free time to dip my toes back into machine learning again!</p>
 </div>
 </div></div></div></div></div>
