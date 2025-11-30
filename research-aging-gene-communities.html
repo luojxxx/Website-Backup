@@ -1,0 +1,158 @@
+<div class="main-content" data-collection-id="692a7cbdf08ee32b35be175a" data-content-field="main-content" data-edit-main-image="" id="content">
+<div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1764466522693" id="page-692a7cbdf08ee32b35be175a"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-bef04b370c1de174846b"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
+<h1 style="white-space:pre-wrap;">Research: Aging Gene Communities</h1>
+</div>
+</div></div><div class="sqs-block image-block sqs-block-image" data-aspect-ratio="60" data-block-type="5" id="block-07425fad785fd2e9d62c"><div class="sqs-block-content">
+<div class="image-block-outer-wrapper layout-caption-below design-layout-inline combination-animation-none individual-animation-none individual-text-animation-none" data-test="image-block-inline-outer-wrapper">
+<figure class="sqs-block-image-figure intrinsic" style="max-width:1184px;">
+<div class="image-block-wrapper" data-animation-role="image">
+<div class="sqs-image-shape-container-element has-aspect-ratio" style="
+                position: relative;
+                
+                  padding-bottom:60%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+<img alt="" data-image="https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/936f8962-8f39-4dbe-bd72-227c7864371e/Gemini_Generated_Image_j7wggbj7wggbj7wg.png" data-image-dimensions="1184x864" data-image-focal-point="0.5,0.5" data-load="false" data-loader="sqs" data-src="https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/936f8962-8f39-4dbe-bd72-227c7864371e/Gemini_Generated_Image_j7wggbj7wggbj7wg.png" data-stretch="false" decoding="async" elementtiming="system-image-block" height="864" loading="lazy" onload='this.classList.add("loaded")' sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" src="https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/936f8962-8f39-4dbe-bd72-227c7864371e/Gemini_Generated_Image_j7wggbj7wggbj7wg.png" srcset="https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/936f8962-8f39-4dbe-bd72-227c7864371e/Gemini_Generated_Image_j7wggbj7wggbj7wg.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/936f8962-8f39-4dbe-bd72-227c7864371e/Gemini_Generated_Image_j7wggbj7wggbj7wg.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/936f8962-8f39-4dbe-bd72-227c7864371e/Gemini_Generated_Image_j7wggbj7wggbj7wg.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/936f8962-8f39-4dbe-bd72-227c7864371e/Gemini_Generated_Image_j7wggbj7wggbj7wg.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/936f8962-8f39-4dbe-bd72-227c7864371e/Gemini_Generated_Image_j7wggbj7wggbj7wg.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/936f8962-8f39-4dbe-bd72-227c7864371e/Gemini_Generated_Image_j7wggbj7wggbj7wg.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/58e7f4d946c3c4645587ad7d/936f8962-8f39-4dbe-bd72-227c7864371e/Gemini_Generated_Image_j7wggbj7wggbj7wg.png?format=2500w 2500w" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" width="1184"/>
+</div>
+</div>
+</figure>
+</div>
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-f43a5acd7ae95f77423f"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
+<h3 style="white-space:pre-wrap;">The experiment</h3><p class="" style="white-space:pre-wrap;">I wanted to try seeing if there was a central mechanism for aging where all the aging genes are clustered together and talk with each other.</p><h3 style="white-space:pre-wrap;">The data</h3><p class="" style="white-space:pre-wrap;">The regulatory gene paths are downloaded from <a href="https://grand.networkmedicine.org/tissues/" target="_blank">https://grand.networkmedicine.org/tissues/</a> and I used the skeletal muscle dataset. </p><p class="" style="white-space:pre-wrap;">The way I converted between ENSG ids and actual gene names I used <a href="https://ftp.ensembl.org/pub/release-74/gtf/homo_sapiens/" target="_blank">https://ftp.ensembl.org/pub/release-74/gtf/homo_sapiens/</a>.</p><h3 style="white-space:pre-wrap;"><strong>The code</strong></h3><p class="" style="white-space:pre-wrap;">The code can be found here: <a href="https://github.com/luojxxx/Aging-community" target="_blank">https://github.com/luojxxx/Aging-community</a></p><p class="" style="white-space:pre-wrap;">Basically I took the gene regulatory network and ran the Louvain algorithm on it at increasing resolution to separate it into communities, so that I had a everything from all genes are in one community to each gene is in it’s own community. Then to decide which resolution (and splitting up of the genes into communities) is the optimal one: Each gene community is scored based on it’s average score formed from the <a href="/research-aging-network-bioinformatics" target="_blank">aging gene relatedness metric from the previous research</a> divided by the number of genes in that community. Then I take the average scores from each community and determine the standard deviation for that particular split, furthermore the standard deviation is divided by the number of communities to penalize the score for having too many communities.</p><h3 style="white-space:pre-wrap;">The results</h3><p class="" style="white-space:pre-wrap;">The scoring of the different ways to partition the genes is below:</p>
+</div>
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-code code-block" data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/7fe3dcc7-477a-4b2e-b03c-bf731aeb3444_29/website.components.code.styles.css"]' data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/7fe3dcc7-477a-4b2e-b03c-bf731aeb3444_29/website.components.code.visitor.js"]' data-block-type="1337" data-definition-name="website.components.code" data-sqsp-block="code" id="block-yui_3_17_2_1_1764462541064_19115"><div class="sqs-block-content"><div class="sqs-code-container" data-localized="{&quot;enableSafeModeTitle&quot;:&quot;Embedded Scripts&quot;,&quot;exitSafeModeButton&quot;:&quot;Exit safe preview&quot;,&quot;enableSafeModeText&quot;:&quot;This block contains embedded scripts. Embedded scripts are disabled while you're logged in and editing your site.&quot;,&quot;enableSafeModeButton&quot;:&quot;Preview in safe mode&quot;,&quot;exitSafeModeTitle&quot;:&quot;Safe Preview&quot;,&quot;exitSafeModeText&quot;:&quot;Please view the page after logging out for accurate rendering.&quot;,&quot;globalSafeMode&quot;:&quot;Embedded Code: This block contains embedded code that has been disabled.&quot;,&quot;scriptDisabled&quot;:&quot;Script Disabled&quot;}">
+<div style="
+    display:inline-block;
+    overflow-y: scroll;
+    height: 300px;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 8px;
+    white-space: pre;
+    ">0
+numCommunities: 1
+maxScore: 0.0
+networkAverageScore: 0.0
+1
+numCommunities: 22
+maxScore: 0.0011187988958297572
+networkAverageScore: 5.085449526498897
+2
+numCommunities: 644
+maxScore: 0.006588115803071665
+networkAverageScore: 1.0229993483030537
+3
+numCommunities: 644
+maxScore: 0.006545291349804581
+networkAverageScore: 1.0163495884789722
+4
+numCommunities: 644
+maxScore: 0.0064786919069263265
+networkAverageScore: 1.0060080600817276
+5
+numCommunities: 644
+maxScore: 0.006541465126955066
+networkAverageScore: 1.0157554544961283
+6
+numCommunities: 644
+maxScore: 0.006558828080003319
+networkAverageScore: 1.0184515652179067
+7
+numCommunities: 692
+maxScore: 0.00665511105772943
+networkAverageScore: 0.9617212511169696
+8
+numCommunities: 1647
+maxScore: 0.005918484858611513
+networkAverageScore: 0.3593494146090779
+9
+numCommunities: 4140
+maxScore: 0.004497036515497951
+networkAverageScore: 0.10862407042265582
+10
+numCommunities: 7148
+maxScore: 0.012468224833691467
+networkAverageScore: 0.17442955838964
+11
+numCommunities: 10181
+maxScore: 0.01084028088605524
+networkAverageScore: 0.10647560049165349
+12
+numCommunities: 13074
+maxScore: 0.013171569656533133
+networkAverageScore: 0.10074628772015552
+13
+numCommunities: 15690
+maxScore: 0.014691636879535761
+networkAverageScore: 0.09363694633228656
+14
+numCommunities: 18204
+maxScore: 0.016100917148011363
+networkAverageScore: 0.08844713880472073
+15
+numCommunities: 20225
+maxScore: 0.016947380580533085
+networkAverageScore: 0.08379421795071983
+16
+numCommunities: 22073
+maxScore: 0.019505791115076946
+networkAverageScore: 0.08836946094811284
+17
+numCommunities: 23604
+maxScore: 0.021115376500348195
+networkAverageScore: 0.08945677215873662
+18
+numCommunities: 24911
+maxScore: 0.023134633859424533
+networkAverageScore: 0.09286914961031084
+19
+numCommunities: 25992
+maxScore: 0.027793282289265125
+networkAverageScore: 0.10693014115599078
+</div>
+</div>
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1764462541064_19181"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
+<p class="" style="white-space:pre-wrap;">As you can see the highest scoring partition is the 2nd one with 22 communities. This is a very coarse grained resolution, but it could still be useful because if all the aging related genes are in one cluster it still tells us something. So the next step is to see the average scores of each community, which is below (the number on the left is the community ID number and the right is the score):</p>
+</div>
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-code code-block" data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/7fe3dcc7-477a-4b2e-b03c-bf731aeb3444_29/website.components.code.styles.css"]' data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/7fe3dcc7-477a-4b2e-b03c-bf731aeb3444_29/website.components.code.visitor.js"]' data-block-type="1337" data-definition-name="website.components.code" data-sqsp-block="code" id="block-yui_3_17_2_1_1764462541064_21328"><div class="sqs-block-content"><div class="sqs-code-container" data-localized="{&quot;enableSafeModeTitle&quot;:&quot;Embedded Scripts&quot;,&quot;exitSafeModeButton&quot;:&quot;Exit safe preview&quot;,&quot;enableSafeModeText&quot;:&quot;This block contains embedded scripts. Embedded scripts are disabled while you're logged in and editing your site.&quot;,&quot;enableSafeModeButton&quot;:&quot;Preview in safe mode&quot;,&quot;exitSafeModeTitle&quot;:&quot;Safe Preview&quot;,&quot;exitSafeModeText&quot;:&quot;Please view the page after logging out for accurate rendering.&quot;,&quot;globalSafeMode&quot;:&quot;Embedded Code: This block contains embedded code that has been disabled.&quot;,&quot;scriptDisabled&quot;:&quot;Script Disabled&quot;}">
+<div style="
+    display:inline-block;
+    overflow-y: scroll;
+    height: 300px;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 8px;
+    white-space: pre;
+    ">{5: 0.009691511175230554,
+ 9: 0.009669555635085031,
+ 17: 0.009565149568688562,
+ 4: 0.009467785733168166,
+ 10: 0.008763163566313481,
+ 19: 0.00867775620697367,
+ 18: 0.008377641938011443,
+ 7: 0.0083583581322157,
+ 3: 0.008242568753833383,
+ 21: 0.008120827767055094,
+ 2: 0.008060493754596169,
+ 13: 0.007706890789515751,
+ 16: 0.007514900807324891,
+ 11: 0.007288466378207555,
+ 6: 0.0072868074533334005,
+ 15: 0.007141613886303938,
+ 0: 0.006954825398436275,
+ 14: 0.006885445663241918,
+ 20: 0.006622003561744187,
+ 1: 0.006314587889851097,
+ 8: 0.006180129640669689,
+ 12: 0.006033783772057245}</div>
+</div>
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1764462541064_21802"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
+<p class="" style="white-space:pre-wrap;">As we can see there is some concentration of aging genes in particular communities compared to others but it isn’t a wild multiple times concentration. And at this point, I put away this research considering it a null result. However, later on I realized that we still learned something from this. That the evidence suggests there isn’t a central aging mechanism and that the aging mechanism is diffuse throughout the genes of the cell. This aligns with what’s seen in aging research, there are genes that affect aging everywhere.</p><p class="" style="white-space:pre-wrap;">Either way I decided to still share this research as an interesting attempt while still learning something.</p>
+</div>
+</div></div></div></div></div>
+</div>
