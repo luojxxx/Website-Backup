@@ -1,5 +1,5 @@
 <div class="main-content" data-collection-id="692a7cbdf08ee32b35be175a" data-content-field="main-content" data-edit-main-image="" id="content">
-<div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1764474938442" id="page-692a7cbdf08ee32b35be175a"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-bef04b370c1de174846b"><div class="sqs-block-content">
+<div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1774629554296" id="page-692a7cbdf08ee32b35be175a"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-bef04b370c1de174846b"><div class="sqs-block-content">
 <div class="sqs-html-content" data-sqsp-text-block-content="">
 <h1 style="white-space:pre-wrap;">Research: Aging Gene Communities</h1>
 </div>
@@ -21,9 +21,9 @@
 </div>
 </div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-f43a5acd7ae95f77423f"><div class="sqs-block-content">
 <div class="sqs-html-content" data-sqsp-text-block-content="">
-<h3 style="white-space:pre-wrap;">The experiment</h3><p class="" style="white-space:pre-wrap;">I wanted to try seeing if there was a central mechanism for aging where all the aging genes are clustered together and talk with each other.</p><h3 style="white-space:pre-wrap;">The data</h3><p class="" style="white-space:pre-wrap;">The regulatory gene paths are downloaded from <a href="https://grand.networkmedicine.org/tissues/" target="_blank">https://grand.networkmedicine.org/tissues/</a> and I used the skeletal muscle dataset. </p><p class="" style="white-space:pre-wrap;">The way I converted between ENSG ids and actual gene names I used <a href="https://ftp.ensembl.org/pub/release-74/gtf/homo_sapiens/" target="_blank">https://ftp.ensembl.org/pub/release-74/gtf/homo_sapiens/</a>.</p><h3 style="white-space:pre-wrap;"><strong>The code</strong></h3><p class="" style="white-space:pre-wrap;">The code can be found here: <a href="https://github.com/luojxxx/Aging-community" target="_blank">https://github.com/luojxxx/Aging-community</a></p><p class="" style="white-space:pre-wrap;">Basically I took the gene regulatory network and ran the Louvain algorithm on it at increasing resolution to separate it into communities, so that I had a everything from all genes are in one community to each gene is in it’s own community. Then to decide which resolution (and splitting up of the genes into communities) is the optimal one: Each gene community is scored based on it’s average score formed from the <a href="/research-aging-network-bioinformatics" target="_blank">aging gene relatedness metric from the previous research</a> divided by the number of genes in that community. Then I take the average scores from each community and determine the standard deviation for that particular split. The rationale being a high standard deviation would have some communities with very high scores and some with very low ones, thus separating the aging genes from the rest. Furthermore the standard deviation is divided by the number of communities to penalize the score for having too many communities.</p><h3 style="white-space:pre-wrap;">The results</h3><p class="" style="white-space:pre-wrap;">The scoring of the different ways to partition the genes is below:</p>
+<h3 style="white-space:pre-wrap;">The experiment</h3><p class="" style="white-space:pre-wrap;">I wanted to try seeing if there was a central mechanism for aging where all the aging genes are clustered together and talk with each other due to the closely connected network discovered in the <a href="https://jing-luo-fnsd.squarespace.com/research-aging-network-bioinformatics">previous aging research</a>.</p><h3 style="white-space:pre-wrap;">The data</h3><p class="" style="white-space:pre-wrap;">The network is downloaded from <a href="https://downloads.thebiogrid.org/File/BioGRID/Release-Archive/BIOGRID-5.0.255/BIOGRID-ORGANISM-5.0.255.tab3.zip" target="_blank">https://downloads.thebiogrid.org/File/BioGRID/Release-Archive/BIOGRID-5.0.255/BIOGRID-ORGANISM-5.0.255.tab3.zip</a> it uses the mus musculus file for lab mice. Note there are genes in biogrid that aren’t found in gene_info like 6622 is only found for humans.</p><p class="" style="white-space:pre-wrap;">The way I converted between Entrez ids and actual gene names I used <a href="https://www.ncbi.nlm.nih.gov/books/NBK3840/?utm_source=chatgpt.com#:~:text=You%20can%20therefore%20convert%20any%20GeneID%20into%20its%20current%20names%20by%20using%20the%20definitions%20provided%20in%20the%20file%20available%20as%20https%3A//ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz" target="_blank">https://www.ncbi.nlm.nih.gov/books/NBK3840/?utm_source=chatgpt.com#:~:text=You%20can%20therefore%20convert%20any%20GeneID%20into%20its%20current%20names%20by%20using%20the%20definitions%20provided%20in%20the%20file%20available%20as%20https%3A//ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz</a> Note there are symbols collisions, the synonyms for a gene can be the same for multiple genes.</p><h3 style="white-space:pre-wrap;"><strong>The code</strong></h3><p class="" style="white-space:pre-wrap;">The code can be found here: <a href="https://github.com/luojxxx/Aging-community" target="_blank">https://github.com/luojxxx/Aging-community</a></p><p class="" style="white-space:pre-wrap;">Basically I took the gene regulatory network and ran the Louvain algorithm on it at increasing resolution to separate it into communities, so that I had a everything from all genes are in one community to each gene is in it’s own community. Then to decide which resolution (and splitting up of the genes into communities) is the optimal one: Each gene community is scored based on it’s average score formed from the <a href="/research-aging-network-bioinformatics" target="_blank">aging gene relatedness metric from the previous research</a> divided by the number of genes in that community. Then I take the average scores from each community and determine the standard deviation for that particular split. The rationale being a high standard deviation would have some communities with very high scores and some with very low ones, thus separating the aging genes from the rest. Furthermore the standard deviation is divided by the number of communities to penalize the score for having too many communities.</p><h3 style="white-space:pre-wrap;">The results</h3><p class="" style="white-space:pre-wrap;">The scoring of the different ways to partition the genes is below:</p>
 </div>
-</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-code code-block" data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/513ce543-fa13-48d9-8673-6f8a9fbb9b37_294/website.components.code.styles.css"]' data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/513ce543-fa13-48d9-8673-6f8a9fbb9b37_294/website.components.code.visitor.js"]' data-block-type="1337" data-definition-name="website.components.code" data-sqsp-block="code" id="block-yui_3_17_2_1_1764462541064_19115"><div class="sqs-block-content"><div class="sqs-code-container" data-localized="{&quot;enableSafeModeTitle&quot;:&quot;Embedded Scripts&quot;,&quot;exitSafeModeButton&quot;:&quot;Exit safe preview&quot;,&quot;enableSafeModeText&quot;:&quot;This block contains embedded scripts. Embedded scripts are disabled while you're logged in and editing your site.&quot;,&quot;enableSafeModeButton&quot;:&quot;Preview in safe mode&quot;,&quot;exitSafeModeTitle&quot;:&quot;Safe Preview&quot;,&quot;exitSafeModeText&quot;:&quot;Please view the page after logging out for accurate rendering.&quot;,&quot;globalSafeMode&quot;:&quot;Embedded Code: This block contains embedded code that has been disabled.&quot;,&quot;scriptDisabled&quot;:&quot;Script Disabled&quot;}">
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-code code-block" data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/ab3bce76-21bd-403e-9f33-ad1d711e2acb_464/website.components.code.styles.css"]' data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/ab3bce76-21bd-403e-9f33-ad1d711e2acb_464/website.components.code.visitor.js"]' data-block-type="1337" data-definition-name="website.components.code" data-sqsp-block="code" id="block-yui_3_17_2_1_1764462541064_19115"><div class="sqs-block-content"><div class="sqs-code-container" data-localized="{&quot;enableSafeModeButton&quot;:&quot;Preview in safe mode&quot;,&quot;enableSafeModeText&quot;:&quot;This block contains embedded scripts. Embedded scripts are disabled while you're logged in and editing your site.&quot;,&quot;enableSafeModeTitle&quot;:&quot;Embedded Scripts&quot;,&quot;exitSafeModeButton&quot;:&quot;Exit safe preview&quot;,&quot;exitSafeModeText&quot;:&quot;Please view the page after logging out for accurate rendering.&quot;,&quot;exitSafeModeTitle&quot;:&quot;Safe Preview&quot;,&quot;globalSafeMode&quot;:&quot;Embedded Code: This block contains embedded code that has been disabled.&quot;,&quot;scriptDisabled&quot;:&quot;Script Disabled&quot;}">
 <div style="
     display:inline-block;
     overflow-y: scroll;
@@ -33,92 +33,132 @@
     padding: 8px;
     white-space: pre;
     ">0
-numCommunities: 1
-maxScore: 0.0
-networkAverageScore: 0.0
+numCommunities: 68
+maxScore: 0.0007488837258844799
+networkAverageScore: 1.101299596888941
 1
-numCommunities: 22
-maxScore: 0.0011187988958297572
-networkAverageScore: 5.085449526498897
+numCommunities: 98
+maxScore: 0.003251776545849143
+networkAverageScore: 3.3181393324991255
 2
-numCommunities: 644
-maxScore: 0.006588115803071665
-networkAverageScore: 1.0229993483030537
+numCommunities: 125
+maxScore: 0.005494769466338331
+networkAverageScore: 4.3958155730706645
 3
-numCommunities: 644
-maxScore: 0.006545291349804581
-networkAverageScore: 1.0163495884789722
+numCommunities: 161
+maxScore: 0.0069487645459496965
+networkAverageScore: 4.316002823571241
 4
-numCommunities: 644
-maxScore: 0.0064786919069263265
-networkAverageScore: 1.0060080600817276
+numCommunities: 191
+maxScore: 0.007090620598480407
+networkAverageScore: 3.712366805487124
 5
-numCommunities: 644
-maxScore: 0.006541465126955066
-networkAverageScore: 1.0157554544961283
+numCommunities: 224
+maxScore: 0.007798266424623854
+networkAverageScore: 3.4813689395642204
 6
-numCommunities: 644
-maxScore: 0.006558828080003319
-networkAverageScore: 1.0184515652179067
+numCommunities: 254
+maxScore: 0.009964267658910406
+networkAverageScore: 3.9229400231930733
 7
-numCommunities: 692
-maxScore: 0.00665511105772943
-networkAverageScore: 0.9617212511169696
+numCommunities: 282
+maxScore: 0.009442697259654121
+networkAverageScore: 3.3484742055511068
 8
-numCommunities: 1647
-maxScore: 0.005918484858611513
-networkAverageScore: 0.3593494146090779
+numCommunities: 306
+maxScore: 0.009427016843352834
+networkAverageScore: 3.0807244586120373
 9
-numCommunities: 4140
-maxScore: 0.004497036515497951
-networkAverageScore: 0.10862407042265582
+numCommunities: 327
+maxScore: 0.010570204795706452
+networkAverageScore: 3.23247853079708
 10
-numCommunities: 7148
-maxScore: 0.012468224833691467
-networkAverageScore: 0.17442955838964
+numCommunities: 344
+maxScore: 0.011201984148051368
+networkAverageScore: 3.256390740712607
 11
-numCommunities: 10181
-maxScore: 0.01084028088605524
-networkAverageScore: 0.10647560049165349
+numCommunities: 359
+maxScore: 0.010791212996202157
+networkAverageScore: 3.00590891259113
 12
-numCommunities: 13074
-maxScore: 0.013171569656533133
-networkAverageScore: 0.10074628772015552
+numCommunities: 383
+maxScore: 0.01044831150033106
+networkAverageScore: 2.7280186684937493
 13
-numCommunities: 15690
-maxScore: 0.014691636879535761
-networkAverageScore: 0.09363694633228656
+numCommunities: 412
+maxScore: 0.011006539459555174
+networkAverageScore: 2.6714901600862073
 14
-numCommunities: 18204
-maxScore: 0.016100917148011363
-networkAverageScore: 0.08844713880472073
+numCommunities: 429
+maxScore: 0.010987803969362013
+networkAverageScore: 2.561259666517952
 15
-numCommunities: 20225
-maxScore: 0.016947380580533085
-networkAverageScore: 0.08379421795071983
+numCommunities: 445
+maxScore: 0.011530432522332485
+networkAverageScore: 2.591108431984828
 16
-numCommunities: 22073
-maxScore: 0.019505791115076946
-networkAverageScore: 0.08836946094811284
+numCommunities: 469
+maxScore: 0.012601752020094066
+networkAverageScore: 2.6869407292311442
 17
-numCommunities: 23604
-maxScore: 0.021115376500348195
-networkAverageScore: 0.08945677215873662
+numCommunities: 485
+maxScore: 0.013875016189636956
+networkAverageScore: 2.860828080337517
 18
-numCommunities: 24911
-maxScore: 0.023134633859424533
-networkAverageScore: 0.09286914961031084
+numCommunities: 494
+maxScore: 0.014028125071537946
+networkAverageScore: 2.8397014314854143
 19
-numCommunities: 25992
-maxScore: 0.027793282289265125
-networkAverageScore: 0.10693014115599078
+numCommunities: 514
+maxScore: 0.014232930192399346
+networkAverageScore: 2.769052566614659
+20
+numCommunities: 542
+maxScore: 0.013790700370515576
+networkAverageScore: 2.5444096624567485
+21
+numCommunities: 561
+maxScore: 0.012914291733680236
+networkAverageScore: 2.3020127867522704
+22
+numCommunities: 579
+maxScore: 0.014295785289177639
+networkAverageScore: 2.4690475456265353
+23
+numCommunities: 607
+maxScore: 0.014441565642706062
+networkAverageScore: 2.3791706165907844
+24
+numCommunities: 622
+maxScore: 0.014512585372182692
+networkAverageScore: 2.3332130823444843
+25
+numCommunities: 637
+maxScore: 0.014803833405518186
+networkAverageScore: 2.3239926853246757
+26
+numCommunities: 667
+maxScore: 0.015379564261291636
+networkAverageScore: 2.305781748319586
+27
+numCommunities: 681
+maxScore: 0.015302882251262605
+networkAverageScore: 2.2471192733131575
+28
+numCommunities: 689
+maxScore: 0.015003367209687308
+networkAverageScore: 2.1775569244829183
+29
+numCommunities: 696
+maxScore: 0.015411276232991931
+networkAverageScore: 2.2142638265793004
 </div>
 </div>
 </div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1764462541064_19181"><div class="sqs-block-content">
 <div class="sqs-html-content" data-sqsp-text-block-content="">
-<p class="" style="white-space:pre-wrap;">As you can see the highest scoring partition is the 2nd one with 22 communities. This is a very coarse grained resolution, but it could still be useful because if all the aging related genes are in one cluster it still tells us something. So the next step is to see the average scores of each community, which is below (the number on the left is the community ID number and the right is the score):</p>
+<p class="" style="white-space:pre-wrap;">As you can see the highest scoring partition is the 2nd one with 125 communities. This is a very coarse grained resolution, but it could still be useful because if all the aging related genes are in one cluster it still tells us something. Also if there aren’t that many genes in the top community, it still works. So the next step is to see the average scores of each community, which is below (the number on the left is the community ID number and the right is the score):</p>
 </div>
-</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-code code-block" data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/513ce543-fa13-48d9-8673-6f8a9fbb9b37_294/website.components.code.styles.css"]' data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/513ce543-fa13-48d9-8673-6f8a9fbb9b37_294/website.components.code.visitor.js"]' data-block-type="1337" data-definition-name="website.components.code" data-sqsp-block="code" id="block-yui_3_17_2_1_1764462541064_21328"><div class="sqs-block-content"><div class="sqs-code-container" data-localized="{&quot;enableSafeModeTitle&quot;:&quot;Embedded Scripts&quot;,&quot;exitSafeModeButton&quot;:&quot;Exit safe preview&quot;,&quot;enableSafeModeText&quot;:&quot;This block contains embedded scripts. Embedded scripts are disabled while you're logged in and editing your site.&quot;,&quot;enableSafeModeButton&quot;:&quot;Preview in safe mode&quot;,&quot;exitSafeModeTitle&quot;:&quot;Safe Preview&quot;,&quot;exitSafeModeText&quot;:&quot;Please view the page after logging out for accurate rendering.&quot;,&quot;globalSafeMode&quot;:&quot;Embedded Code: This block contains embedded code that has been disabled.&quot;,&quot;scriptDisabled&quot;:&quot;Script Disabled&quot;}">
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-code code-block" data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/ab3bce76-21bd-403e-9f33-ad1d711e2acb_464/website.components.code.styles.css"]' data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/ab3bce76-21bd-403e-9f33-ad1d711e2acb_464/website.components.code.visitor.js"]' data-block-type="1337" data-definition-name="website.components.code" data-sqsp-block="code" id="block-yui_3_17_2_1_1764462541064_21328"><div class="sqs-block-content"><div class="sqs-code-container" data-localized="{&quot;enableSafeModeButton&quot;:&quot;Preview in safe mode&quot;,&quot;enableSafeModeText&quot;:&quot;This block contains embedded scripts. Embedded scripts are disabled while you're logged in and editing your site.&quot;,&quot;enableSafeModeTitle&quot;:&quot;Embedded Scripts&quot;,&quot;exitSafeModeButton&quot;:&quot;Exit safe preview&quot;,&quot;exitSafeModeText&quot;:&quot;Please view the page after logging out for accurate rendering.&quot;,&quot;exitSafeModeTitle&quot;:&quot;Safe Preview&quot;,&quot;globalSafeMode&quot;:&quot;Embedded Code: This block contains embedded code that has been disabled.&quot;,&quot;scriptDisabled&quot;:&quot;Script Disabled&quot;}">
 <div style="
     display:inline-block;
     overflow-y: scroll;
@@ -127,32 +167,403 @@ networkAverageScore: 0.10693014115599078
     border: 1px solid #000;
     padding: 8px;
     white-space: pre;
-    ">{5: 0.009691511175230554,
- 9: 0.009669555635085031,
- 17: 0.009565149568688562,
- 4: 0.009467785733168166,
- 10: 0.008763163566313481,
- 19: 0.00867775620697367,
- 18: 0.008377641938011443,
- 7: 0.0083583581322157,
- 3: 0.008242568753833383,
- 21: 0.008120827767055094,
- 2: 0.008060493754596169,
- 13: 0.007706890789515751,
- 16: 0.007514900807324891,
- 11: 0.007288466378207555,
- 6: 0.0072868074533334005,
- 15: 0.007141613886303938,
- 0: 0.006954825398436275,
- 14: 0.006885445663241918,
- 20: 0.006622003561744187,
- 1: 0.006314587889851097,
- 8: 0.006180129640669689,
- 12: 0.006033783772057245}</div>
+    ">{32: 0.02683359144917233,
+ 25: 0.02344140892791225,
+ 37: 0.01888267530849549,
+ 12: 0.018163231353081892,
+ 17: 0.016936248385012925,
+ 13: 0.015910983376810794,
+ 36: 0.015590394504566734,
+ 15: 0.014450073770012853,
+ 49: 0.01438738925802879,
+ 26: 0.014037323082948439,
+ 29: 0.0136811927732839,
+ 47: 0.012961355190601771,
+ 35: 0.012087931342665763,
+ 2: 0.010733670637428385,
+ 38: 0.010633674787744553,
+ 50: 0.010525420714355803,
+ 21: 0.009787355701154386,
+ 10: 0.009431895044839642,
+ 31: 0.008848716614197215,
+ 14: 0.008797374824475353,
+ 22: 0.006798205821359797,
+ 11: 0.006606083307721204,
+ 52: 0.0061752566520008375,
+ 3: 0.006132287608704209,
+ 39: 0.005012731787350247,
+ 30: 0.00480471680420105,
+ 19: 0.0039896489421834625,
+ 6: 0.003815734359907868,
+ 55: 0.003772044573643411,
+ 28: 0.00376632699841627,
+ 24: 0.003611700978523318,
+ 27: 0.003400198989479512,
+ 44: 0.0030413023255813957,
+ 16: 0.003037537438336856,
+ 54: 0.0026286384708922327,
+ 9: 0.0026116613774978923,
+ 53: 0.0025319229112833763,
+ 41: 0.0020119866560151483,
+ 1: 0.001977977809047519,
+ 23: 0.0016649709302325576,
+ 7: 0.0015174168482369158,
+ 43: 0.0014001098699871815,
+ 0: 0.001192218155660601,
+ 4: 0.0010802861243342124,
+ 20: 0.0009344958683602298,
+ 34: 0.0007821404552051255,
+ 33: 0.0007460642986088988,
+ 40: 0.0007303217335130884,
+ 45: 0.00044825494098749916,
+ 46: 0.0003260562015503876,
+ 42: 0.00021987110149630432,
+ 18: 0.00021666390528979397,
+ 5: 0.00017405412808369267,
+ 51: 7.711668176784456e-05,
+ 80: 0.0,
+ 99: 0.0,
+ 114: 0.0,
+ 122: 0.0,
+ 78: 0.0,
+ 70: 0.0,
+ 108: 0.0,
+ 107: 0.0,
+ 72: 0.0,
+ 66: 0.0,
+ 109: 0.0,
+ 110: 0.0,
+ 75: 0.0,
+ 111: 0.0,
+ 112: 0.0,
+ 113: 0.0,
+ 115: 0.0,
+ 82: 0.0,
+ 92: 0.0,
+ 123: 0.0,
+ 116: 0.0,
+ 117: 0.0,
+ 118: 0.0,
+ 119: 0.0,
+ 87: 0.0,
+ 65: 0.0,
+ 77: 0.0,
+ 68: 0.0,
+ 120: 0.0,
+ 121: 0.0,
+ 106: 0.0,
+ 105: 0.0,
+ 76: 0.0,
+ 101: 0.0,
+ 94: 0.0,
+ 90: 0.0,
+ 61: 0.0,
+ 81: 0.0,
+ 98: 0.0,
+ 97: 0.0,
+ 104: 0.0,
+ 103: 0.0,
+ 85: 0.0,
+ 84: 0.0,
+ 95: 0.0,
+ 96: 0.0,
+ 64: 0.0,
+ 73: 0.0,
+ 56: 0.0,
+ 74: 0.0,
+ 100: 0.0,
+ 58: 0.0,
+ 102: 0.0,
+ 71: 0.0,
+ 124: 0.0,
+ 57: 0.0,
+ 86: 0.0,
+ 91: 0.0,
+ 79: 0.0,
+ 83: 0.0,
+ 67: 0.0,
+ 60: 0.0,
+ 62: 0.0,
+ 93: 0.0,
+ 88: 0.0,
+ 69: 0.0,
+ 89: 0.0,
+ 8: 0.0,
+ 59: 0.0,
+ 63: 0.0,
+ 48: 0.0}</div>
 </div>
 </div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1764462541064_21802"><div class="sqs-block-content">
 <div class="sqs-html-content" data-sqsp-text-block-content="">
-<p class="" style="white-space:pre-wrap;">As we can see there is some concentration of aging genes in particular communities compared to others but it isn’t a wild multiple times concentration. And at this point, I put away this research considering it a null result. However, later on I realized that we still learned something from this. That within this GRN and metric, aging-relatedness is consistent with a diffuse, multi-module architecture.</p><p class="" style="white-space:pre-wrap;">Either way I decided to still share this research as an interesting attempt while still learning something.</p>
+<p class="" style="white-space:pre-wrap;">At first glance, there are communities that stand out amongst the pack, which suggests this top community may have a stronger connection to aging genes and is a central mechanism to aging. I’ve posted the entrez ids of the genes within community 32 below.</p>
+</div>
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-code code-block" data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/ab3bce76-21bd-403e-9f33-ad1d711e2acb_464/website.components.code.styles.css"]' data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/ab3bce76-21bd-403e-9f33-ad1d711e2acb_464/website.components.code.visitor.js"]' data-block-type="1337" data-definition-name="website.components.code" data-sqsp-block="code" id="block-yui_3_17_2_1_1774600975846_5323"><div class="sqs-block-content"><div class="sqs-code-container" data-localized="{&quot;enableSafeModeButton&quot;:&quot;Preview in safe mode&quot;,&quot;enableSafeModeText&quot;:&quot;This block contains embedded scripts. Embedded scripts are disabled while you're logged in and editing your site.&quot;,&quot;enableSafeModeTitle&quot;:&quot;Embedded Scripts&quot;,&quot;exitSafeModeButton&quot;:&quot;Exit safe preview&quot;,&quot;exitSafeModeText&quot;:&quot;Please view the page after logging out for accurate rendering.&quot;,&quot;exitSafeModeTitle&quot;:&quot;Safe Preview&quot;,&quot;globalSafeMode&quot;:&quot;Embedded Code: This block contains embedded code that has been disabled.&quot;,&quot;scriptDisabled&quot;:&quot;Script Disabled&quot;}">
+<div style="
+    display:inline-block;
+    overflow-y: scroll;
+    height: 300px;
+    border: 1px solid #000;
+    padding: 8px;
+    ">
+572,
+ 580,
+ 672,
+ 675,
+ 975,
+ 1859,
+ 1874,
+ 3667,
+ 4092,
+ 4193,
+ 4624,
+ 4683,
+ 4869,
+ 5154,
+ 5290,
+ 5426,
+ 5602,
+ 5824,
+ 5889,
+ 7157,
+ 7295,
+ 7297,
+ 7516,
+ 8444,
+ 8650,
+ 8660,
+ 9870,
+ 10210,
+ 10248,
+ 10519,
+ 10591,
+ 10933,
+ 11200,
+ 11329,
+ 11335,
+ 11516,
+ 11596,
+ 11658,
+ 11920,
+ 12021,
+ 12144,
+ 12189,
+ 12190,
+ 12476,
+ 12511,
+ 12561,
+ 12578,
+ 12879,
+ 12916,
+ 12991,
+ 13393,
+ 13404,
+ 13447,
+ 13555,
+ 14025,
+ 14312,
+ 14734,
+ 15081,
+ 15260,
+ 15270,
+ 15407,
+ 15434,
+ 15951,
+ 16147,
+ 17246,
+ 17248,
+ 17279,
+ 17285,
+ 17286,
+ 17535,
+ 17984,
+ 18503,
+ 18505,
+ 18559,
+ 18566,
+ 18612,
+ 18973,
+ 19206,
+ 19360,
+ 19361,
+ 19362,
+ 19363,
+ 19364,
+ 19378,
+ 20482,
+ 20983,
+ 21376,
+ 21745,
+ 21749,
+ 21750,
+ 21752,
+ 21907,
+ 22059,
+ 22061,
+ 22062,
+ 22249,
+ 22592,
+ 22927,
+ 23012,
+ 23468,
+ 23558,
+ 24102,
+ 25913,
+ 26277,
+ 26909,
+ 26972,
+ 27107,
+ 27223,
+ 27354,
+ 29274,
+ 29867,
+ 50717,
+ 50883,
+ 51147,
+ 53325,
+ 54386,
+ 54610,
+ 55114,
+ 55602,
+ 56046,
+ 56196,
+ 56317,
+ 56338,
+ 56397,
+ 56710,
+ 56816,
+ 57062,
+ 57434,
+ 57915,
+ 58517,
+ 58521,
+ 59001,
+ 64427,
+ 64704,
+ 64858,
+ 65263,
+ 66593,
+ 66599,
+ 66889,
+ 67157,
+ 67500,
+ 67525,
+ 67788,
+ 68047,
+ 68098,
+ 69181,
+ 69188,
+ 70024,
+ 70238,
+ 70432,
+ 71310,
+ 71960,
+ 72469,
+ 72486,
+ 72775,
+ 72836,
+ 72931,
+ 72973,
+ 73173,
+ 74241,
+ 74335,
+ 74377,
+ 74469,
+ 75013,
+ 75826,
+ 76795,
+ 77782,
+ 78284,
+ 79837,
+ 83743,
+ 84062,
+ 84309,
+ 90441,
+ 90459,
+ 93643,
+ 93696,
+ 93759,
+ 100929,
+ 101185,
+ 102774,
+ 104346,
+ 105670,
+ 106585,
+ 107815,
+ 109095,
+ 109910,
+ 114642,
+ 114875,
+ 140709,
+ 140917,
+ 175962,
+ 191578,
+ 192197,
+ 200081,
+ 208898,
+ 216527,
+ 223989,
+ 224860,
+ 225182,
+ 226419,
+ 227325,
+ 227624,
+ 231201,
+ 233826,
+ 234069,
+ 234776,
+ 235180,
+ 235559,
+ 235610,
+ 237211,
+ 240087,
+ 244329,
+ 244698,
+ 245000,
+ 245638,
+ 319583,
+ 320214,
+ 329581,
+ 374920,
+ 379888,
+ 381107,
+ 381802,
+ 382985,
+ 641373,
+ 1489531,
+ 3707654,
+ 100035767,
+ 100041687,
+ 100504617</div>
+</div>
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1774602321136_4564"><div class="sqs-block-content">
+<div class="sqs-html-content" data-sqsp-text-block-content="">
+<p class="" style="white-space:pre-wrap;">Now here’s the score data for the genes in community 32 that have score data. We can see it’s pretty sparse in comparison to the 229 total genes in the community. However, this is only 1758 genes spread out over 19299 total genes in biogrid, it’s likely to be sparse. Given it’s the top result, the other genes may deserve some examination, but it is pretty weak overall. However, it is also possible the Louvain split method isn’t splitting the network optimally, since in the previous research showed a much more closely connected network for the aging genes than the randomized controls. But at this point, this is the best that we can do. The fact may still be that aging is a diffuse mechanism.</p>
+</div>
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-code code-block" data-block-css='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/ab3bce76-21bd-403e-9f33-ad1d711e2acb_464/website.components.code.styles.css"]' data-block-scripts='["https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.code/ab3bce76-21bd-403e-9f33-ad1d711e2acb_464/website.components.code.visitor.js"]' data-block-type="1337" data-definition-name="website.components.code" data-sqsp-block="code" id="block-yui_3_17_2_1_1774602321136_3832"><div class="sqs-block-content"><div class="sqs-code-container" data-localized="{&quot;enableSafeModeButton&quot;:&quot;Preview in safe mode&quot;,&quot;enableSafeModeText&quot;:&quot;This block contains embedded scripts. Embedded scripts are disabled while you're logged in and editing your site.&quot;,&quot;enableSafeModeTitle&quot;:&quot;Embedded Scripts&quot;,&quot;exitSafeModeButton&quot;:&quot;Exit safe preview&quot;,&quot;exitSafeModeText&quot;:&quot;Please view the page after logging out for accurate rendering.&quot;,&quot;exitSafeModeTitle&quot;:&quot;Safe Preview&quot;,&quot;globalSafeMode&quot;:&quot;Embedded Code: This block contains embedded code that has been disabled.&quot;,&quot;scriptDisabled&quot;:&quot;Script Disabled&quot;}">
+<div style="
+    display:inline-block;
+    overflow-y: scroll;
+    height: 300px;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 8px;
+    white-space: pre;
+    ">11920: (1.0001211240310077, True),
+12189: (0.7143633720930233, True),
+12190: (0.3730295542635659, True),
+12578: (0.9250886627906977, True),
+13555: (0.2462422480620155, True),
+15270: (0.8028478682170543, False),
+15434: (0.002121124031007752, False),
+17246: (0.5083028100775194, True),
+17248: (0.05612112403100775, False),
+17279: (0.08466618217054264, False),
+17984: (0.022237887596899226, False),
+18505: (0.08012112403100775, False),
+22059: (0.3225436046511628, False),
+67788: (0.001937984496124031, False),
+93759: (1.0051477713178294, True)
+    </div>
 </div>
 </div></div></div></div></div>
 </div>
